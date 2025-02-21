@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set 1 - Vintage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Retro Vintage</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="page #">Home</a></li>
+                    <li><a href="set1.html">Set 1</a></li>
+                    <li><a href="set2.html">Set 2</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="set1-details">
+        <div class="container">
+            <h2>Set 1: Retro Vintage</h2>
+            <div class="clothing-item">
+                <img src="image.jpg" alt="Shirt #1">
+                <p class="clothing-name">Comfortable Beige Shirt</p>
+                <p class="price">Php 100.00</p>
+            </div>
+            <div class="clothing-item">
+                <img src="image.jpg" alt="Bottom 1">
+                <p class="clothing-name">Brown Skirt</p>
+                <p class="price">Php 200.00</p>
+            </div>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
