@@ -16,7 +16,6 @@
     Reality Stone.ttf (headings)
     (paragraphs)
   ### html : html
-  *clothing
     clothing1.html (red) - WIP
     clothing2.html (yellow) - WIP
     clothing3.html (green) - WIP
