@@ -5,7 +5,7 @@
   _vicente-feature | vicente's sub-branch
 
 
-#### folders & files
+#### folders & files (official)
   ## js : jscript
     # clothing1.js (red) - WIP
     # clothing2.js (yellow) - WIP
