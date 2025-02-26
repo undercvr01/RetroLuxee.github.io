@@ -1,0 +1,32 @@
+@font-face {
+     font-family: 'Reality Stone';
+     src: url('/fonts/reality stone.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     font-family: 'Reality Stone', sans-serif;
+}
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     font-family: Arial, sans-serif;
+     background-color: #f4f4f4;
+     padding: 20px;
+}
+
+.divider {
+     height: 60px;
+     width: 100%;
+}

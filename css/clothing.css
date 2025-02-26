@@ -1,0 +1,238 @@
+.c-container {
+     margin-bottom: 40px;
+     background: #fff;
+     padding: 20px;
+     border: 1px solid #ddd;
+}
+
+.c-container h1,
+.c-container h2 {
+     margin-bottom: 10px;
+}
+
+.c-container p {
+     margin-bottom: 10px;
+}
+
+#c-full-dress-map a {
+     display: block;
+     text-decoration: none;
+     color: inherit;
+     border: 1px dashed #ccc;
+     padding: 40px;
+     text-align: center;
+}
+
+#c-gallery {
+     position: relative;
+}
+
+.c-carousel {
+     width: 100%;
+     overflow: hidden;
+     position: relative;
+}
+
+.c-carousel img {
+     width: 100%;
+     display: block;
+}
+
+.c-lightbox {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.8);
+     align-items: center;
+     justify-content: center;
+     z-index: 1000;
+}
+
+.c-lightbox-content {
+     background: #fff;
+     padding: 20px;
+     max-width: 800px;
+     width: 90%;
+     position: relative;
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.c-lightbox-thumbnails {
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+}
+
+.c-lightbox-thumbnails img {
+     width: 80px;
+     margin: 0 5px;
+     cursor: pointer;
+     border: 2px solid transparent;
+}
+
+.c-lightbox-thumbnails img.active {
+     border-color: #333;
+}
+
+/* Related Products */
+#c-related-products {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     min-height: 100vh;
+}
+
+.c-products-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     justify-content: center;
+     align-items: center;
+}
+
+.c-product-item {
+     text-align: center;
+     transition: transform 0.3s ease-in-out;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.c-product-image {
+     width: 100%;
+     max-width: 350px;
+     height: 350px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+}
+
+.c-product-image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     aspect-ratio: 1 / 1;
+     transition: transform 0.3s ease-in-out;
+}
+
+.c-product-item:hover .c-product-image img {
+     transform: scale(1.05);
+}
+
+.c-product-info {
+     flex-grow: 1;
+     width: 100%;
+     padding: 10px 0;
+}
+
+.c-product-info h3 {
+     font-size: 28px;
+     margin: 10px 0;
+}
+
+.c-product-info p {
+     font-size: 22px;
+     color: #555;
+}
+
+.c-quick-view {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 10px;
+     font-size: 1.5em;
+     color: #333;
+     cursor: pointer;
+}
+
+.eye-icon::before {
+     content: '\1F441';
+     font-size: 1.5em;
+}
+
+/* Modal Box View */
+.c-modal {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.8);
+     align-items: center;
+     justify-content: center;
+     z-index: 2000;
+}
+
+.c-modal-content {
+     background: #fff;
+     max-width: 1250px;
+     width: 75%;
+     height: 60%;
+     display: flex;
+     padding: 50px;
+     position: relative;
+     gap: 25px;
+}
+
+.c-modal-left {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     max-width: 450px;
+     height: 450px;
+     overflow: hidden;
+}
+
+.c-modal-left img {
+     padding: 10px;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     aspect-ratio: 1 / 1;
+     transition: transform 0.3s ease-in-out;
+}
+
+.c-modal-left img:hover {
+     transform: scale(1.05);
+ }
+
+ .c-modal-right {
+     flex: 2;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 10px 0;
+}
+
+.c-modal-right h3 {
+     font-size: 28px;
+     margin: 10px 0;
+}
+
+.c-modal-right h2 {
+     font-size: 24px;
+     margin: 10px 0;
+}
+
+.c-modal-right p {
+     font-size: 22px;
+     color: #555;
+     margin: 10px 0;
+     text-align: justify;
+}
+
+.c-modal-close {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     cursor: pointer;
+     font-size: 1.5em;
+}
