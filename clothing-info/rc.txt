@@ -1,23 +1,23 @@
-1. High-Waisted Pleated Skirt with Belt
-     Price: $65.00
-     Short Description: A vintage-inspired high-waisted pleated skirt in a deep rust shade, featuring a decorative belt.
-     Long Description: This elegant pleated skirt is designed with a structured high waist, creating a sophisticated silhouette. The deep rust colour adds a timeless appeal, while the sharp pleats provide movement and grace. The skirt is accented with a stylish black belt with gold detailing, enhancing its refined aesthetic. Ideal for vintage and classic fashion enthusiasts, it pairs beautifully with fitted blouses and tailored jackets.
-
-2. Black Lace Mesh Gloves
+1. Black Lace Mesh Gloves
      Price: $18.00
      Short Description: Delicate black lace gloves with ruffled cuffs, perfect for adding a vintage touch to any outfit.
      Long Description: These elegant lace mesh gloves are crafted from a fine, sheer fabric with an intricate lace pattern. The ruffled cuffs add a graceful finish, making them ideal for formal events or period-inspired fashion. Their lightweight design ensures comfort while maintaining a luxurious appearance. Whether worn for a special occasion or as a stylish statement, these gloves bring a sense of refinement to any ensemble.
 
-3. Striped Puff-Sleeve Blouse
+2. Striped Puff-Sleeve Blouse
      Price: $42.00
      Short Description: A cropped vintage-style blouse with puffed sleeves, a sailor collar, and rust-red and cream stripes.
      Long Description: This retro-inspired blouse is a statement piece with its bold striped pattern in rust-red and cream. Designed with a wide sailor collar, short puffed sleeves, and a fitted waist, it offers a flattering and nostalgic silhouette. The fabric is lightweight and breathable, making it suitable for both casual and semi-formal occasions. The button-down front enhances its vintage appeal, allowing it to be styled effortlessly with high-waisted skirts or trousers.Red and White Mary Jane Heels
      
-4. Price: $55.00
+3. Price: $55.00
      Short Description: Vintage-style red and white Mary Jane heels with a decorative bow and sturdy block heel.
      Long Description: These charming Mary Jane heels combine classic vintage aesthetics with modern comfort. The glossy red patent finish is complemented by white detailing, featuring delicate scalloped edges. A bold red bow on the toe adds a playful yet elegant touch. The adjustable strap ensures a secure fit, while the block heel provides stability and support. Perfect for retro-inspired outfits, these shoes are a stylish addition to any wardrobe.
 
-5. Black Velvet Handbag with Crystal Buckle
+4. Black Velvet Handbag with Crystal Buckle
      Price: $75.00
      Short Description: A luxurious black velvet handbag featuring a crystal-encrusted buckle and a structured handle.
      Long Description: This sophisticated handbag is crafted from plush black velvet, offering an air of elegance and refinement. The structured design is enhanced by a dazzling square-shaped buckle adorned with sparkling crystals, serving as the focal point of the bag. The curved top handle, accented with gold-tone hardware, provides a comfortable grip while maintaining its sleek aesthetic. Perfect for evening events, formal occasions, or adding a touch of glamour to everyday wear, this handbag is a timeless accessory for those who appreciate classic luxury.
+
+5. High-Waisted Pleated Skirt with Belt
+     Price: $65.00
+     Short Description: A vintage-inspired high-waisted pleated skirt in a deep rust shade, featuring a decorative belt.
+     Long Description: This elegant pleated skirt is designed with a structured high waist, creating a sophisticated silhouette. The deep rust colour adds a timeless appeal, while the sharp pleats provide movement and grace. The skirt is accented with a stylish black belt with gold detailing, enhancing its refined aesthetic. Ideal for vintage and classic fashion enthusiasts, it pairs beautifully with fitted blouses and tailored jackets.
