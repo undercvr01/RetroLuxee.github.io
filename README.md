@@ -1,10 +1,10 @@
 # proj-web
   ITS121-1L FINAL PROJECT | WK 12 DL
 
-### sub-branches
-  _vicente-feature | vicente's sub-branch
+# sub-branches
+  ## _vicente-feature | vicente's sub-branch
 
-### folders & files (official)
+# folders & files (official)
   ## js : jscript
     # clothing1.js (red) - WIP
     # clothing2.js (yellow) - WIP
