@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Customer Service</h1>
+            <p>Slogan Placeholder</p>
+        </div>
+        
+         <!-- Customer Service Section -->
+        <div class="content-section">
+            <h2>Need Assistance? We're Here to Help!</h2>
+            <p>At [Your Company Name], we pride ourselves on excellent customer service. If you have any questions or need support with our services, don't hesitate to reach out. Our team is always ready to assist you with anything you need!</p>
+            <p>Contact us at: <a href="mailto:support@yourcompany.com" class="cta-small">support@yourcompany.com</a> or call us at (123) 456-7890.</p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="content-section">
+            <a href="#" class="cta">Get in Touch with Our Marketing Experts</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2025 [Your Company Name]. All rights reserved.</p>
+            <p>If you no longer wish to receive our newsletter, <a href="#">unsubscribe here</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
