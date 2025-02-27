@@ -1,37 +1,76 @@
-const products = {
-    1: {
-        title: "Black Lace Mesh Gloves",
-        price: "$18.00",
-        description: "These elegant lace mesh gloves are crafted from a fine, sheer fabric with an intricate lace pattern. The ruffled cuffs add a graceful finish, making them ideal for formal events or period-inspired fashion. Their lightweight design ensures comfort while maintaining a luxurious appearance. Whether worn for a special occasion or as a stylish statement, these gloves bring a sense of refinement to any ensemble.",
-        image: "/img-clothing/r-glv-02.jpg"
-    },
-    2: {
-        title: "Red and White Mary Jane Heels",
-        price: "$55.00",
-        description: "These charming Mary Jane heels combine classic vintage aesthetics with modern comfort. The glossy red patent finish is complemented by white detailing, featuring delicate scalloped edges. A bold red bow on the toe adds a playful yet elegant touch. The adjustable strap ensures a secure fit, while the block heel provides stability and support. Perfect for retro-inspired outfits, these shoes are a stylish addition to any wardrobe.",
-        image: "/img-clothing/r-shoes-feat-01.jpg"
-    },
-    3: {
-        title: "Black Velvet Handbag with Crystal Buckle",
-        price: "$75.00",
-        description: "This sophisticated handbag is crafted from plush black velvet, offering an air of elegance and refinement. The structured design is enhanced by a dazzling square-shaped buckle adorned with sparkling crystals, serving as the focal point of the bag. The curved top handle, accented with gold-tone hardware, provides a comfortable grip while maintaining its sleek aesthetic.",
-        image: "/img-clothing/r-bag-01.jpg"
+/* RELATED PRODUCTS */
+document.addEventListener("DOMContentLoaded", function () {
+    function initializeProducts() {
+        document.querySelectorAll(".c-product-item").forEach(item => {
+            let productKey = item.getAttribute("data-product"); // e.g., "6A"
+            if (!productKey) return;
+            let productNumber = productKey.slice(0, -1); // Extracts "6"
+            let productVariant = productKey.slice(-1); // Extracts "A"
+
+            if (products[productNumber] && productsImages[productNumber] && productsImages[productNumber][productVariant]) {
+                let imgElement = item.querySelector(".c-product-image img");
+                let titleElement = item.querySelector(".product-title");
+                let priceElement = item.querySelector(".product-price");
+                let quickViewBtn = item.querySelector(".c-quick-view");
+
+                if (imgElement) {
+                    imgElement.src = productsImages[productNumber][productVariant];
+                    imgElement.alt = products[productNumber].title;
+                }
+                if (titleElement) titleElement.textContent = products[productNumber].title;
+                if (priceElement) priceElement.textContent = products[productNumber].price;
+                if (quickViewBtn) quickViewBtn.setAttribute("data-product", productNumber);
+            }
+        });
     }
-};
 
-document.querySelectorAll('.c-quick-view').forEach(button => {
-    button.addEventListener('click', function(event) {
-        event.preventDefault(); 
-        const productId = this.getAttribute('data-product');
-        const product = products[productId];
-        document.getElementById('modal-title').innerText = product.title;
-        document.getElementById('modal-price').innerText = product.price;
-        document.getElementById('modal-description').innerText = product.description;
-        document.getElementById('modal-left-image').src = product.image;
-        document.getElementById('modal').style.display = 'flex';
-    });
-});
-document.querySelector('.c-modal-close').addEventListener('click', () => {
-    document.getElementById('modal').style.display = 'none';
-});
+    /* RELATED PRODUCTS : QUICK MODAL VIEW */
+    function initializeQuickView() {
+        document.querySelectorAll(".c-quick-view").forEach(button => {
+            button.addEventListener("click", function () {
+                let productNumber = this.getAttribute("data-product");
+                let modal = document.getElementById("modal");
+                let modalImage = document.getElementById("modal-left-image");
+                let modalTitle = document.getElementById("modal-title");
+                let modalPrice = document.getElementById("modal-price");
+                let modalDescription = document.getElementById("modal-long-description");
+                let modalCategory = document.getElementById("modal-category");
+                modalCategory.style.fontStyle = "italic";
+                if (products[productNumber] && productsImages[productNumber]) {
+                    let firstVariant = Object.keys(productsImages[productNumber])[0]; // Default to first variant
+                    if (modalImage) {
+                        modalImage.src = productsImages[productNumber][firstVariant];
+                        modalImage.alt = products[productNumber].title;
+                    }
+                    if (modalTitle) modalTitle.textContent = products[productNumber].title;
+                    if (modalPrice) modalPrice.textContent = products[productNumber].price;
+                    if (modalDescription) modalDescription.textContent = products[productNumber].longDescription;
+                    if (modalCategory) modalCategory.textContent = products[productNumber].category;
+                    if (modal) modal.style.display = "flex";
+                }
+            });
+        });
+    }
 
+    function initializeModalClose() {
+        let closeModalBtn = document.querySelector(".c-modal-close");
+        let modal = document.getElementById("modal");
+        if (closeModalBtn) {
+            closeModalBtn.addEventListener("click", function () {
+                if (modal) modal.style.display = "none";
+            });
+        }
+
+        window.addEventListener("click", function (event) {
+            if (modal && event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    }
+
+    setTimeout(() => {
+        initializeProducts();
+        initializeQuickView();
+        initializeModalClose();
+    }, 100);
+});

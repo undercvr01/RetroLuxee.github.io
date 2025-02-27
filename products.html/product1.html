@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Product Page</title>
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="/css/main.css">
+     <link rel="stylesheet" href="/css/clothing.css">
+     <link rel="stylesheet" href="/css/products.css">
+
+     <!-- JSCRIPT -->
+     <script src="/js/products.js" defer></script>
+     <script src="/js/products-data.js" defer></script>
+     <script src="/js/clothing1.js" defer></script>
+
+</head>
+
+<body>
+
+     <div id="prod-container" class="prod-container" data-product="15A">
+          <!-- Left Column (Main Image & Carousel) -->
+          <div class="prod-left">
+               <img id="prod-image" class="prod-main-image" data-variant="A" src="" alt="Product Image">
+          </div>
+
+          <!-- Right Column (Product Details) -->
+          <div class="prod-right">
+               <h1 id="prod-title"></h1>
+               <button id="prod-sizes"></button>
+               <h2 id="prod-price"></h2>
+               <p id="prod-short-description"></p>
+
+               <div class="prod-qty-input">
+                    <button class="prod-qty-count prod-qty-minus" data-action="minus">−</button>
+                    <input class="prod-qty" type="number" name="product-qty" min="0" max="10" value="1">
+                    <button class="prod-qty-count prod-qty-add" data-action="add">+</button>
+               </div>
+
+               <button id="prod-add-to-cart" disabled>Add to Cart</button>
+          </div>
+     </div>
+
+     <div id="prod-carousel-container" class="prod-carousel-container" data-product="15">
+          <div id="prod-carousel" class="prod-carousel">
+              <!-- Carousel images will be dynamically populated -->
+          </div>
+      </div>
+
+     <!-- Product Tabs -->
+     <div class="prod-tab-container">
+          <button class="prod-tab-button active" data-tab="description">Description</button>
+          <button class="prod-tab-button" data-tab="additional-info">Additional Information</button>
+          <button class="prod-tab-button" data-tab="reviews">Reviews</button>
+     </div>
+
+     <!-- Tab Content -->
+     <div class="prod-tab-content active" id="prod-description">
+          <p id="prod-shortDescription"></p>
+     </div>
+
+     <div class="prod-tab-content" id="prod-additional-info">
+
+     </div>
+
+     <div class="prod-tab-content" id="prod-reviews">
+     </div>
+</body>
+
+</html>

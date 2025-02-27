@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+     font-family: Arial, sans-serif;
+     margin: 20px;
+     padding: 0;
+     background-color: #f9f9f9;
+}
+
+/* Main Product Container */
+.prod-container {
+     display: flex;
+     max-width: 1500px;
+     margin: auto;
+     background: white;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Side (Image & Carousel) */
+.prod-left {
+     flex: 1;
+     padding: 10px;
+}
+
+/* Main Image Styles */
+.prod-main-image {
+     width: 80%;
+     height: 90%;
+     object-fit: cover;
+     transition: transform 0.3s ease-in-out;
+}
+
+.prod-main-image:hover {
+     transform: scale(1.05);
+}
+
+/* Carousel Styling (Below the Main Content) */
+.prod-carousel-container {
+     margin-top: 10px;
+     display: flex;
+     overflow-x: auto;
+     padding: 10px 0;
+     border-top: 1px solid #ddd;
+}
+
+.prod-carousel {
+     display: flex;
+     gap: 10px;
+}
+
+.carousel-image {
+     width: 60px;
+     height: 60px;
+     border-radius: 4px;
+     cursor: pointer;
+     border: 2px solid transparent;
+     object-fit: cover;
+     transition: border-color 0.2s, transform 0.2s;
+}
+
+.carousel-image:hover {
+     transform: scale(1.05);
+}
+
+.carousel-image.active {
+     border-color: #ff5252;
+}
+
+/* Right Side (Details) */
+.prod-right {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 10px;
+}
+
+.prod-right h1 {
+     font-size: 28px;
+     margin: 10px 0;
+}
+
+.prod-right h2 {
+     font-size: 24px;
+     margin: 10px 0;
+}
+
+.prod-right p {
+     font-size: 22px;
+     color: #555;
+     margin: 10px 0;
+     text-align: justify;
+}
+
+
+.prod-qty-input {
+     display: flex;
+     align-items: center;
+     margin: 10px 0;
+}
+
+.prod-qty-count {
+     background: #ddd;
+     border: none;
+     padding: 5px 10px;
+     cursor: pointer;
+}
+
+.prod-qty {
+     width: 40px;
+     text-align: center;
+     margin: 0 5px;
+}
+
+#prod-add-to-cart {
+     background: #555;
+     color: white;
+     border: none;
+     padding: 10px;
+     cursor: not-allowed;
+}
+
+/* Tabs */
+.prod-tab-container {
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+}
+
+.prod-tab-button {
+     padding: 10px;
+     border: none;
+     background: #eee;
+     cursor: pointer;
+     margin-right: 5px;
+}
+
+.prod-tab-button.active {
+     background: #555;
+     color: white;
+}
+
+.prod-tab-content {
+     display: none;
+     padding: 20px;
+     background: white;
+     margin-top: 10px;
+     border-radius: 5px;
+}
+
+.prod-tab-content.active {
+     display: block;
+}
+
+/* Product Selection Buttons */
+.prod-selection {
+     margin-top: 20px;
+     text-align: center;
+}
+
+.prod-selection button {
+     padding: 10px;
+     margin: 5px;
+     cursor: pointer;
+     background: #ddd;
+     border: none;
+}
