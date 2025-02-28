@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (titleElement) titleElement.textContent = products[productNumber].title;
                     if (priceElement) priceElement.textContent = products[productNumber].price;
                     if (shortDescElement) shortDescElement.textContent = products[productNumber].shortDescription;
-                    if (categoryElement) categoryElement.textContent = products[productNumber].catagory;
+                    if (categoryElement) categoryElement.textContent = products[productNumber].category;
 
                     // Bottom Column
                     let bottomColumn = slide.querySelector(".prod-bottom-column");
@@ -113,52 +113,65 @@ document.addEventListener("DOMContentLoaded", function () {
 /* THUMBNAIL */
 document.addEventListener("DOMContentLoaded", function () {
      function initializeProducts() {
-         document.querySelectorAll(".prod-slide").forEach(slide => {
-             let productKey = slide.getAttribute("data-product"); // e.g., "7A"
-             if (!productKey) return;
-             
-             let productNumber = productKey.slice(0, -1); // Extracts "7"
-             let productVariant = productKey.slice(-1); // Extracts "A"
-             
-             let mainImage = slide.querySelector(".prod-left-column img");
-             let thumbnailContainer = slide.querySelector("#thumbnailContainer");
-             
-             if (products[productNumber]) {
-                 // Set default main image to Variant A
-                 let defaultVariant = "A";
-                 if (productsImages[productNumber] && productsImages[productNumber][defaultVariant]) {
-                     mainImage.src = productsImages[productNumber][defaultVariant];
-                 }
-                 
-                 // Set alt text to product title
-                 mainImage.alt = products[productNumber].title;
-                 
-                 // Generate thumbnails for available variants
-                 thumbnailContainer.innerHTML = ""; // Clear existing thumbnails
-                 let variants = ["A", "B", "C", "D", "E"];
-                 
-                 variants.forEach(variant => {
-                     if (productsImages[productNumber] && productsImages[productNumber][variant]) {
-                         let thumbWrapper = document.createElement("div");
-                         thumbWrapper.classList.add("prod-thumbnail");
-                         
-                         let thumb = document.createElement("img");
-                         thumb.src = productsImages[productNumber][variant];
-                         thumb.alt = `${products[productNumber].title} - Variant ${variant}`;
-                         thumb.dataset.variant = variant;
-                         
-                         thumb.addEventListener("click", function () {
-                             mainImage.src = productsImages[productNumber][variant];
-                             mainImage.alt = `${products[productNumber].title} - Variant ${variant}`;
-                         });
-                         
-                         thumbWrapper.appendChild(thumb);
-                         thumbnailContainer.appendChild(thumbWrapper);
-                     }
-                 });
-             }
-         });
+          document.querySelectorAll(".prod-slide").forEach(slide => {
+               let productKey = slide.getAttribute("data-product"); // e.g., "7A"
+               if (!productKey) return;
+
+               let productNumber = productKey.slice(0, -1); // Extracts "7"
+               let productVariant = productKey.slice(-1); // Extracts "A"
+
+               let mainImage = slide.querySelector(".prod-left-column img");
+               let thumbnailContainer = slide.querySelector("#thumbnailContainer");
+
+               if (products[productNumber]) {
+                    // Set default main image to Variant A
+                    let defaultVariant = "A";
+                    if (productsImages[productNumber] && productsImages[productNumber][defaultVariant]) {
+                         mainImage.src = productsImages[productNumber][defaultVariant];
+                    }
+
+                    // Set alt text to product title
+                    mainImage.alt = products[productNumber].title;
+
+                    // Generate thumbnails for available variants
+                    thumbnailContainer.innerHTML = ""; // Clear existing thumbnails
+                    let variants = ["A", "B", "C", "D", "E"];
+
+                    variants.forEach(variant => {
+                         if (productsImages[productNumber] && productsImages[productNumber][variant]) {
+                              let thumbWrapper = document.createElement("div");
+                              thumbWrapper.classList.add("prod-thumbnail");
+
+                              let thumb = document.createElement("img");
+                              thumb.src = productsImages[productNumber][variant];
+                              thumb.alt = `${products[productNumber].title} - Variant ${variant}`;
+                              thumb.dataset.variant = variant;
+
+                              thumb.addEventListener("click", function () {
+                                   mainImage.src = productsImages[productNumber][variant];
+                                   mainImage.alt = `${products[productNumber].title} - Variant ${variant}`;
+                              });
+
+                              thumbWrapper.appendChild(thumb);
+                              thumbnailContainer.appendChild(thumbWrapper);
+                         }
+                    });
+               }
+          });
      }
-     
+
      initializeProducts();
- });
+});
+
+/* Quantity */
+function prodChangeQuantity(amount) {
+     let quantityInput = document.getElementById("prod-quantity");
+     if (!quantityInput) {
+          console.error("Element with ID 'prod-quantity' not found.");
+          return;
+     }
+     let currentValue = parseInt(quantityInput.value) || 0;
+     if (currentValue + amount > 0) {
+          quantityInput.value = currentValue + amount;
+     }
+}

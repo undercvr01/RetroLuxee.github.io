@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/clothing.css">
 
     <!-- JSCRIPT -->
     <script src="/js/products-data.js" defer></script>
+    <script src="/js/product.js" defer></script>
     <script src="/js/clothing1.js" defer></script>
 
     <title>Clothing 1 - Red</title>
@@ -19,6 +21,200 @@
     <div id="c-full-dress-map" class="c-container">
         <h1>Full Dress Map</h1>
         <a href="#">Clickable Map Placeholder</a>
+    </div>
+
+    <div id="c-product" class="c-container">
+        <div class="prod-carousel">
+            <button class="carousel-prev">&lt;</button>
+                 <div class="prod-container">
+                 <!-- Slide 1 -->
+                 <div class="prod-slide" id="slide-1" data-product="7A">
+                      <div class="prod-left-column">
+                           <img src="" alt="">
+                           <div class="thumbnail-container" id="thumbnailContainer">
+                                <!-- Thumbnails will be dynamically added here -->
+                            </div>
+                      </div>
+                      <div class="prod-right-column" data-product="7A">
+                           <div class="prod-info">
+                                <h2 class="prod-title"></h2>
+                                <h1 class="prod-price"></h1>
+                                <p class="prod-shortDesc"></p>
+                                <div class="prod-sizes">
+                                     <button>XS</button>
+                                     <button>S</button>
+                                     <button>M</button>
+                                     <button>L</button>
+                                     <button>XL</button>
+                                </div>
+                                <div class="prod-quantity">
+                                     <button onclick="prodChangeQuantity(-1)">-</button>
+                                     <input type="text" id="prod-quantity" value="1" readonly>
+                                     <button onclick="prodChangeQuantity(1)">+</button>
+                                 </div>
+                                <p class="prod-category"></p>
+                           </div>
+                      </div>
+                      <div class="prod-bottom-column" data-product="7A">
+                           <div class="prod-tabs-container">
+                                <button class="prod-tab active">Description</button>
+                                <button class="prod-tab">Additional Information</button>
+                                <button class="prod-tab">Reviews</button>
+                           </div>
+                           <div class="prod-tab-content">
+                                <p></p>
+                           </div>
+                      </div>
+                 </div>
+            
+                 <!-- Slide 2 -->
+                 <div class="prod-slide" id="slide-2" data-product="10A">
+                      <div class="prod-left-column">
+                           <img src="" alt="">
+                           <div class="thumbnail-container" id="thumbnailContainer">
+                                <!-- Thumbnails will be dynamically added here -->
+                            </div>
+                      </div>
+                      <div class="prod-right-column" data-product="10A">
+                           <div class="prod-info">
+                                <h2 class="prod-title"></h2>
+                                <h1 class="prod-price"></h1>
+                                <p class="prod-shortDesc"></p>
+                                <div class="prod-sizes">
+                                     <button>XS</button>
+                                     <button>S</button>
+                                     <button>M</button>
+                                     <button>L</button>
+                                     <button>XL</button>
+                                </div>
+                                <div class="prod-quantity">
+                                     <button onclick="prodChangeQuantity(-1)">-</button>
+                                     <input type="text" id="prod-quantity" value="1" readonly>
+                                     <button onclick="prodChangeQuantity(1)">+</button>
+                                 </div>
+                                <p class="prod-category"></p>
+                           </div>
+                      </div>
+                      <div class="prod-bottom-column" data-product="7A">
+                           <div class="prod-tabs-container">
+                                <button class="prod-tab active">Description</button>
+                                <button class="prod-tab">Additional Information</button>
+                                <button class="prod-tab">Reviews</button>
+                           </div>
+                           <div class="prod-tab-content">
+                                <p></p>
+                           </div>
+                      </div>
+                 </div>
+            
+                 <!-- Slide 3 -->
+                 <div class="prod-slide" id="slide-3" data-product="8A">
+                      <div class="prod-left-column">
+                           <img src="" alt="">
+                           <div class="thumbnail-container" id="thumbnailContainer">
+                                <!-- Thumbnails will be dynamically added here -->
+                            </div>
+                      </div>
+                      <div class="prod-right-column" data-product="8A">
+                           <div class="prod-info">
+                                <h2 class="prod-title"></h2>
+                                <h1 class="prod-price"></h1>
+                                <p class="prod-shortDesc"></p>
+                                <div class="prod-sizes">
+                                     <button>5</button>
+                                     <button>6</button>
+                                     <button>7</button>
+                                     <button>8</button>
+                                     <button>9</button>
+                                     <button>10</button>
+                                </div>
+                                <div class="prod-quantity">
+                                     <button onclick="prodChangeQuantity(-1)">-</button>
+                                     <input type="text" id="prod-quantity" value="1" readonly>
+                                     <button onclick="prodChangeQuantity(1)">+</button>
+                                 </div>
+                                <p class="prod-category"></p>
+                           </div>
+                      </div>
+                      <div class="prod-bottom-column" data-product="7A">
+                           <div class="prod-tabs-container">
+                                <button class="prod-tab active">Description</button>
+                                <button class="prod-tab">Additional Information</button>
+                                <button class="prod-tab">Reviews</button>
+                           </div>
+                           <div class="prod-tab-content">
+                                <p></p>
+                           </div>
+                      </div>
+                 </div>
+            
+                 <!-- Slide 4 -->
+                 <div class="prod-slide" id="slide-4" data-product="6A">
+                      <div class="prod-left-column">
+                           <img src="" alt="">
+                           <div class="thumbnail-container" id="thumbnailContainer">
+                                <!-- Thumbnails will be dynamically added here -->
+                            </div>
+                      </div>
+                      <div class="prod-right-column">
+                           <div class="prod-info">
+                                <h2 class="prod-title"></h2>
+                                <h1 class="prod-price"></h1>
+                                <p class="prod-shortDesc"></p>
+                                <div class="prod-quantity">
+                                     <button onclick="prodChangeQuantity(-1)">-</button>
+                                     <input type="text" id="prod-quantity" value="1" readonly>
+                                     <button onclick="prodChangeQuantity(1)">+</button>
+                                 </div>
+                                <p class="prod-category"></p>
+                           </div>
+                      </div>
+                      <div class="prod-bottom-column" data-product="7A">
+                           <div class="prod-tabs-container">
+                                <button class="prod-tab active">Description</button>
+                                <button class="prod-tab">Additional Information</button>
+                                <button class="prod-tab">Reviews</button>
+                           </div>
+                           <div class="prod-tab-content">
+                                <p></p>
+                           </div>
+                      </div>
+                 </div>
+            
+                 <!-- Slide 5 -->
+                 <div class="prod-slide" id="slide-5" data-product="9A">
+                      <div class="prod-left-column">
+                           <img src="" alt="">
+                           <div class="thumbnail-container" id="thumbnailContainer">
+                                <!-- Thumbnails will be dynamically added here -->
+                            </div>
+                      </div>
+                      <div class="prod-right-column">
+                           <div class="prod-info">
+                                <h2 class="prod-title"></h2>
+                                <h1 class="prod-price"></h1>
+                                <p class="prod-shortDesc"></p>
+                                <div class="prod-quantity">
+                                     <button onclick="prodChangeQuantity(-1)">-</button>
+                                     <input type="text" id="prod-quantity" value="1" readonly>
+                                     <button onclick="prodChangeQuantity(1)">+</button>
+                                 </div>
+                                <p class="prod-category"></p>
+                           </div>
+                      </div>
+                      <div class="prod-bottom-column" data-product="7A">
+                           <div class="prod-tabs-container">
+                                <button class="prod-tab active">Description</button>
+                                <button class="prod-tab">Additional Information</button>
+                                <button class="prod-tab">Reviews</button>
+                           </div>
+                           <div class="prod-tab-content">
+                                <p></p>
+                           </div>
+                      </div>
+                 </div>
+            <button class="carousel-next">&gt;</button>
+       </div>
     </div>
 
     <div id="c-gallery" class="c-container">
