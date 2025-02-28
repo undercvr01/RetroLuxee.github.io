@@ -4,6 +4,9 @@
      justify-content: center;
      align-items: center;
      padding: 20px;
+     transition: transform 0.5s ease-in-out;
+     overflow: hidden;
+
 }
 
 /* Slide Layout */
@@ -21,19 +24,39 @@
      padding: 20px;
 }
 
-/* Image Carousel */
+/* Image */
 .prod-left-column {
-     grid-area: left;
      display: flex;
+     flex-direction: column;
      align-items: center;
-     justify-content: center;
-     border: 2px solid #e0e0e0;
-     border-radius: 8px;
 }
 
 .prod-left-column img {
-     max-width: 100%;
-     border-radius: 8px;
+     width: 500px;
+     height: 650px;
+     border: 1px solid #ccc;
+     margin-bottom: 10px;
+}
+
+.thumbnail-container {
+     display: flex;
+     gap: 10px;
+     justify-content: center;
+}
+
+.prod-thumbnail {
+     width: 100px;
+     height: 100px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.prod-thumbnail img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
 }
 
 /* Product Information */
@@ -73,21 +96,49 @@
      color: #888;
 }
 
-/* Bottom Tabs */
+/* Bottom */
+.prod-bottom-column {
+     grid-area: bottom;
+     display: flex;
+     align-items: flex-start;
+     gap: 20px;
+     margin-top: 20px;
+     width: 100%;
+}
+
+.prod-tab-container {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     width: 30%;
+}
+
 .prod-bottom-column {
      grid-area: bottom;
      display: flex;
      flex-direction: column;
      gap: 10px;
      margin-top: 20px;
+     width: 100%;
+     align-items: stretch;
+}
+
+.prod-tabs-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+     gap: 5px;
 }
 
 .prod-tab {
+     flex: 1;
      border: 1px solid #ddd;
-     border-radius: 8px;
+     border-radius: 8px 8px 0 0;
      padding: 10px;
      cursor: pointer;
      background-color: white;
+     text-align: center;
 }
 
 .prod-tab.active {
@@ -96,26 +147,41 @@
 }
 
 .prod-tab-content {
+     width: 100%;
      border: 2px solid #e0e0e0;
-     border-radius: 8px;
+     border-radius: 0 0 8px 8px;
      padding: 20px;
      min-height: 150px;
+     background: white;
 }
-
 
 /* Carousel Arrows */
-.prod-carousel-control {
-     border: none;
-     background: none;
-     font-size: 2rem;
-     cursor: pointer;
-     color: #aaa;
+.prod-carousel {
+     display: flex;
+     align-items: center;
+     position: relative;
+     width: 80%;
+     margin: auto;
+     overflow: hidden;
 }
 
-.prod-prev {
+.carousel-prev,
+.carousel-next {
+     background: #000;
+     color: #fff;
+     border: none;
+     padding: 10px;
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     z-index: 100;
+}
+
+.carousel-prev {
      left: 10px;
 }
 
-.prod-next {
+.carousel-next {
      right: 10px;
 }

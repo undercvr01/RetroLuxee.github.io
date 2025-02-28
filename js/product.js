@@ -79,34 +79,86 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* CAROUSEL */
 document.addEventListener("DOMContentLoaded", function () {
-     let currentSlide = 0;
-     const slides = document.querySelectorAll(".prod-slide");
-     const totalSlides = slides.length;
+     const container = document.querySelector(".prod-container");
+     const slides = Array.from(document.querySelectorAll(".prod-slide"));
+     const prevBtn = document.querySelector(".carousel-prev");
+     const nextBtn = document.querySelector(".carousel-next");
+
+     let currentIndex = 0;
 
      function showSlide(index) {
           slides.forEach((slide, i) => {
-               slide.style.display = i === index ? "block" : "none";
+               slide.style.display = i === index ? "grid" : "none";
           });
      }
 
      function nextSlide() {
-          currentSlide = (currentSlide + 1) % totalSlides;
-          showSlide(currentSlide);
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
      }
 
      function prevSlide() {
-          currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-          showSlide(currentSlide);
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          showSlide(currentIndex);
      }
 
-     // Ensure buttons are properly targeted
-     document.querySelectorAll(".carousel-next").forEach(button => {
-          button.addEventListener("click", nextSlide);
-     });
-     document.querySelectorAll(".carousel-prev").forEach(button => {
-          button.addEventListener("click", prevSlide);
-     });
+     prevBtn.addEventListener("click", prevSlide);
+     nextBtn.addEventListener("click", nextSlide);
 
-     // Initialize the first slide
-     showSlide(currentSlide);
+     slides.forEach(slide => slide.style.display = "none");
+
+     showSlide(currentIndex);
 });
+
+/* THUMBNAIL */
+document.addEventListener("DOMContentLoaded", function () {
+     function initializeProducts() {
+         document.querySelectorAll(".prod-slide").forEach(slide => {
+             let productKey = slide.getAttribute("data-product"); // e.g., "7A"
+             if (!productKey) return;
+             
+             let productNumber = productKey.slice(0, -1); // Extracts "7"
+             let productVariant = productKey.slice(-1); // Extracts "A"
+             
+             let mainImage = slide.querySelector(".prod-left-column img");
+             let thumbnailContainer = slide.querySelector("#thumbnailContainer");
+             
+             if (products[productNumber]) {
+                 // Set default main image to Variant A
+                 let defaultVariant = "A";
+                 if (productsImages[productNumber] && productsImages[productNumber][defaultVariant]) {
+                     mainImage.src = productsImages[productNumber][defaultVariant];
+                 }
+                 
+                 // Set alt text to product title
+                 mainImage.alt = products[productNumber].title;
+                 
+                 // Generate thumbnails for available variants
+                 thumbnailContainer.innerHTML = ""; // Clear existing thumbnails
+                 let variants = ["A", "B", "C", "D", "E"];
+                 
+                 variants.forEach(variant => {
+                     if (productsImages[productNumber] && productsImages[productNumber][variant]) {
+                         let thumbWrapper = document.createElement("div");
+                         thumbWrapper.classList.add("prod-thumbnail");
+                         
+                         let thumb = document.createElement("img");
+                         thumb.src = productsImages[productNumber][variant];
+                         thumb.alt = `${products[productNumber].title} - Variant ${variant}`;
+                         thumb.dataset.variant = variant;
+                         
+                         thumb.addEventListener("click", function () {
+                             mainImage.src = productsImages[productNumber][variant];
+                             mainImage.alt = `${products[productNumber].title} - Variant ${variant}`;
+                         });
+                         
+                         thumbWrapper.appendChild(thumb);
+                         thumbnailContainer.appendChild(thumbWrapper);
+                     }
+                 });
+             }
+         });
+     }
+     
+     initializeProducts();
+ });

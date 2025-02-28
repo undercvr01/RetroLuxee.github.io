@@ -17,130 +17,124 @@
 </head>
 
 <body>
-     <div class="prod-container">
-          <button class="carousel-nav prev" onclick="moveSlide(-1)">❮</button>
-          <button class="carousel-nav next" onclick="moveSlide(1)">❯</button>
-          <!-- Slide 1 -->
-          <div class="prod-slide" id="slide-1" data-product="7A">
-               <div class="prod-left-column">
-                    <img src="" alt="">
-               </div>
-               <div class="prod-right-column" data-product="7A">
-                    <div class="prod-info">
-                         <h2 class="prod-title"></h2>
-                         <p class="prod-price"></p>
-                         <p class="prod-shortDesc"></p>
-                         <div class="prod-sizes">
-                              <button>XS</button>
-                              <button>S</button>
-                              <button>M</button>
-                              <button>L</button>
-                              <button>XL</button>
+     <div class="prod-carousel">
+          <button class="carousel-prev">&lt;</button>
+               <div class="prod-container">
+               <!-- Slide 1 -->
+               <div class="prod-slide" id="slide-1" data-product="7A">
+                    <div class="prod-left-column">
+                         <img src="" alt="">
+                         <div class="thumbnail-container" id="thumbnailContainer">
+                              <!-- Thumbnails will be dynamically added here -->
+                          </div>
+                    </div>
+                    <div class="prod-right-column" data-product="7A">
+                         <div class="prod-info">
+                              <h2 class="prod-title"></h2>
+                              <p class="prod-price"></p>
+                              <p class="prod-shortDesc"></p>
+                              <div class="prod-sizes">
+                                   <button>XS</button>
+                                   <button>S</button>
+                                   <button>M</button>
+                                   <button>L</button>
+                                   <button>XL</button>
+                              </div>
+                              <p class="prod-category"></p>
                          </div>
-                         <p class="prod-category"></p>
                     </div>
-               </div>
-               <div class="prod-bottom-column" data-product="7A">
-                    <button class="prod-tab active">Description</button>
-                    <button class="prod-tab">Additional Information</button>
-                    <button class="prod-tab">Reviews</button>
-                    <div class="prod-tab-content">
-                         <p></p>
-                    </div>
-               </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="prod-slide" id="slide-2" data-product="10A">
-               <div class="prod-left-column">
-                    <img src="" alt="" />
-               </div>
-               <div class="prod-right-column" data-product="10A">
-                    <div class="prod-info">
-                         <h2 class="prod-title"></h2>
-                         <p class="prod-price"></p>
-                         <p class="prod-shortDesc"></p>
-                         <div class="prod-sizes">
-                              <button>XS</button>
-                              <button>S</button>
-                              <button>M</button>
-                              <button>L</button>
-                              <button>XL</button>
+                    <div class="prod-bottom-column" data-product="7A">
+                         <div class="prod-tabs-container">
+                              <button class="prod-tab active">Description</button>
+                              <button class="prod-tab">Additional Information</button>
+                              <button class="prod-tab">Reviews</button>
                          </div>
-                         <p class="prod-category"></p>
-                    </div>
-               </div>
-               <div class="prod-bottom-column" data-product="10A">
-                    <button class="prod-tab active">Description</button>
-                    <button class="prod-tab">Additional Information</button>
-                    <button class="prod-tab">Reviews</button>
-                    <div class="prod-tab-content">
-                         <p></p>
-                    </div>
-               </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="prod-slide" id="slide-3" data-product="8A">
-               <div class="prod-left-column">
-                    <img src="" alt="" />
-               </div>
-               <div class="prod-right-column" data-product="8A">
-                    <div class="prod-info">
-                         <h2 class="prod-title"></h2>
-                         <p class="prod-price"></p>
-                         <p class="prod-shortDesc"></p>
-                         <div class="prod-sizes">
-                              <button>5</button>
-                              <button>6</button>
-                              <button>7</button>
-                              <button>8</button>
-                              <button>9</button>
-                              <button>10</button>
+                         <div class="prod-tab-content">
+                              <p></p>
                          </div>
-                         <p class="prod-category"></p>
                     </div>
                </div>
-               <div class="prod-bottom-column" data-product="8A">
-                    <button class="prod-tab active">Description</button>
-                    <button class="prod-tab">Additional Information</button>
-                    <button class="prod-tab">Reviews</button>
-                    <div class="prod-tab-content">
-                         <p></p>
+          
+               <!-- Slide 2 -->
+               <div class="prod-slide" id="slide-2" data-product="10A">
+                    <div class="prod-left-column">
+                         <img src="" alt="">
+                         <div class="thumbnail-container" id="thumbnailContainer">
+                              <!-- Thumbnails will be dynamically added here -->
+                          </div>
+                    </div>
+                    <div class="prod-right-column" data-product="10A">
+                         <div class="prod-info">
+                              <h2 class="prod-title"></h2>
+                              <p class="prod-price"></p>
+                              <p class="prod-shortDesc"></p>
+                              <div class="prod-sizes">
+                                   <button>XS</button>
+                                   <button>S</button>
+                                   <button>M</button>
+                                   <button>L</button>
+                                   <button>XL</button>
+                              </div>
+                              <p class="prod-category"></p>
+                         </div>
+                    </div>
+                    <div class="prod-bottom-column" data-product="7A">
+                         <div class="prod-tabs-container">
+                              <button class="prod-tab active">Description</button>
+                              <button class="prod-tab">Additional Information</button>
+                              <button class="prod-tab">Reviews</button>
+                         </div>
+                         <div class="prod-tab-content">
+                              <p></p>
+                         </div>
                     </div>
                </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="prod-slide" id="slide-4" data-product="6A">
-               <div class="prod-left-column">
-                    <img src="" alt="" />
-               </div>
-               <div class="prod-right-column">
-                    <div class="prod-info">
-                         <h2 class="prod-title"></h2>
-                         <p class="prod-price"></p>
-                         <p class="prod-shortDesc"></p>
-                         <p class="prod-category"></p>
+          
+               <!-- Slide 3 -->
+               <div class="prod-slide" id="slide-3" data-product="8A">
+                    <div class="prod-left-column">
+                         <img src="" alt="">
+                         <div class="thumbnail-container" id="thumbnailContainer">
+                              <!-- Thumbnails will be dynamically added here -->
+                          </div>
+                    </div>
+                    <div class="prod-right-column" data-product="8A">
+                         <div class="prod-info">
+                              <h2 class="prod-title"></h2>
+                              <p class="prod-price"></p>
+                              <p class="prod-shortDesc"></p>
+                              <div class="prod-sizes">
+                                   <button>5</button>
+                                   <button>6</button>
+                                   <button>7</button>
+                                   <button>8</button>
+                                   <button>9</button>
+                                   <button>10</button>
+                              </div>
+                              <p class="prod-category"></p>
+                         </div>
+                    </div>
+                    <div class="prod-bottom-column" data-product="7A">
+                         <div class="prod-tabs-container">
+                              <button class="prod-tab active">Description</button>
+                              <button class="prod-tab">Additional Information</button>
+                              <button class="prod-tab">Reviews</button>
+                         </div>
+                         <div class="prod-tab-content">
+                              <p></p>
+                         </div>
                     </div>
                </div>
-               <div class="prod-bottom-column">
-                    <button class="prod-tab active">Description</button>
-                    <button class="prod-tab">Additional Information</button>
-                    <button class="prod-tab">Reviews</button>
-                    <div class="prod-tab-content">
-                         <p></p>
+          
+               <!-- Slide 4 -->
+               <div class="prod-slide" id="slide-4" data-product="6A">
+                    <div class="prod-left-column">
+                         <img src="" alt="">
+                         <div class="thumbnail-container" id="thumbnailContainer">
+                              <!-- Thumbnails will be dynamically added here -->
+                          </div>
                     </div>
-               </div>
-          </div>
-
-          <!-- Slide 5 -->
-          <div class="prod-slide" id="slide-5" data-product="9A">
-               <div class="prod-left-column">
-                    <img src="" alt="" />
-               </div>
-               <div class="prod-right-column" data-product="9A">
-                    <div class="prod-slide" id="slide-5">
+                    <div class="prod-right-column">
                          <div class="prod-info">
                               <h2 class="prod-title"></h2>
                               <p class="prod-price"></p>
@@ -148,16 +142,46 @@
                               <p class="prod-category"></p>
                          </div>
                     </div>
-               </div>
-               <div class="prod-bottom-column" data-product="9A">
-                    <button class="prod-tab active">Description</button>
-                    <button class="prod-tab">Additional Information</button>
-                    <button class="prod-tab">Reviews</button>
-                    <div class="prod-tab-content">
-                         <p></p>
+                    <div class="prod-bottom-column" data-product="7A">
+                         <div class="prod-tabs-container">
+                              <button class="prod-tab active">Description</button>
+                              <button class="prod-tab">Additional Information</button>
+                              <button class="prod-tab">Reviews</button>
+                         </div>
+                         <div class="prod-tab-content">
+                              <p></p>
+                         </div>
                     </div>
                </div>
-          </div>
+          
+               <!-- Slide 5 -->
+               <div class="prod-slide" id="slide-5" data-product="9A">
+                    <div class="prod-left-column">
+                         <img src="" alt="">
+                         <div class="thumbnail-container" id="thumbnailContainer">
+                              <!-- Thumbnails will be dynamically added here -->
+                          </div>
+                    </div>
+                    <div class="prod-right-column">
+                         <div class="prod-info">
+                              <h2 class="prod-title"></h2>
+                              <p class="prod-price"></p>
+                              <p class="prod-shortDesc"></p>
+                              <p class="prod-category"></p>
+                         </div>
+                    </div>
+                    <div class="prod-bottom-column" data-product="7A">
+                         <div class="prod-tabs-container">
+                              <button class="prod-tab active">Description</button>
+                              <button class="prod-tab">Additional Information</button>
+                              <button class="prod-tab">Reviews</button>
+                         </div>
+                         <div class="prod-tab-content">
+                              <p></p>
+                         </div>
+                    </div>
+               </div>
+          <button class="carousel-next">&gt;</button>
      </div>
 </body>
 
