@@ -1,0 +1,50 @@
+What to put in About US?
+- Company Logo (X)
+	* in navigation
+
+- SLOGAN [O]
+
+- ABOUT US [I]
+	*(company description) [P]
+	*sliding automated gallery [O]
+
+- Our Community [O]
+	*description [O]
+	*background-image [O]
+
+- Vision & Mission
+  	* same size with history on the left [O]
+	* description [O]
+	* fix borders
+	* improve headings 
+
+- History [P]
+	*same size with Vision and Mission on the right [O]
+	*with random ahh picture [P]
+
+- Banner [X]
+	* Company Banner (?)
+
+- Team Members(with Photos & Website Roles) [I]		
+	* clickable left and right or tree design? [?]
+	* tree design [O]
+	* place pictures [P]
+	* improve headings (make it smaller)
+	* improve line spacing & margin 
+
+- Terms & Regulations [O]
+    * Container same as Privacy Policy [O]
+
+- Privacy Policy [O]
+
+- Footer [I]
+
+- Sustainability (*) 
+- Management Policy (*)
+
+LEGEND:
+ (X) --- not applicable
+ (O) --- applied
+ (I) --- inProgress
+ (P) --- Placeholder
+ (*) --- Discontinued
