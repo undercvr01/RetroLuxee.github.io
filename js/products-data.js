@@ -141,15 +141,15 @@ const products = {
 
 const productsImages = {
      1: {
-          A: "/img-clothing/glv-01.jpg",
-          B: "/img-clothing/glv-02.jpg",
-          C: "/img-clothing/glv-03.jpg",
+          A: "/img-clothing/y-glv-01.jpg",
+          B: "/img-clothing/y-glv-02.jpg",
+          C: "/img-clothing/y-glv-03.jpg",
      },
      2: {
           A: "/img-clothing/y-top-01.jpg",
-          B: "/img-clothing/y-top-01.jpg",
-          C: "/img-clothing/y-top-01.jpg",
-          D: "/img-clothing/y-top-01.jpg",
+          B: "/img-clothing/y-top-02.jpg",
+          C: "/img-clothing/y-top-03.jpg",
+          D: "/img-clothing/y-top-04.jpg",
      },
      3: {
           A: "/img-clothing/y-hat-feat-01.jpg",
