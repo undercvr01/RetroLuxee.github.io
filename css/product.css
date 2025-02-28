@@ -1,0 +1,121 @@
+/* Container */
+.prod-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+}
+
+/* Slide Layout */
+.prod-slide {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto 1fr;
+     grid-template-areas:
+          "left right"
+          "bottom bottom";
+     gap: 20px;
+     max-width: 1200px;
+     border: 2px solid #e0e0e0;
+     border-radius: 12px;
+     padding: 20px;
+}
+
+/* Image Carousel */
+.prod-left-column {
+     grid-area: left;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: 2px solid #e0e0e0;
+     border-radius: 8px;
+}
+
+.prod-left-column img {
+     max-width: 100%;
+     border-radius: 8px;
+}
+
+/* Product Information */
+.prod-right-column {
+     grid-area: right;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+
+.prod-title {
+     font-size: 1.5rem;
+     font-weight: bold;
+     margin: 0;
+}
+
+.prod-price {
+     font-size: 1.2rem;
+     color: #333;
+}
+
+.prod-shortDesc {
+     color: #666;
+}
+
+.prod-sizes button {
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     padding: 5px 10px;
+     margin-right: 5px;
+     cursor: pointer;
+     background-color: white;
+}
+
+.prod-category {
+     font-style: italic;
+     color: #888;
+}
+
+/* Bottom Tabs */
+.prod-bottom-column {
+     grid-area: bottom;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin-top: 20px;
+}
+
+.prod-tab {
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     padding: 10px;
+     cursor: pointer;
+     background-color: white;
+}
+
+.prod-tab.active {
+     background-color: #f0f0f0;
+     border-color: #aaa;
+}
+
+.prod-tab-content {
+     border: 2px solid #e0e0e0;
+     border-radius: 8px;
+     padding: 20px;
+     min-height: 150px;
+}
+
+
+/* Carousel Arrows */
+.prod-carousel-control {
+     border: none;
+     background: none;
+     font-size: 2rem;
+     cursor: pointer;
+     color: #aaa;
+}
+
+.prod-prev {
+     left: 10px;
+}
+
+.prod-next {
+     right: 10px;
+}
