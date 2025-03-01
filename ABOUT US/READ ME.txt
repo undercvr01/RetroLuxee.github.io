@@ -4,8 +4,8 @@ What to put in About US?
 
 - SLOGAN [O]
 
-- ABOUT US [I]
-	*(company description) [P]
+- ABOUT US [O]
+	*(company description) [O]
 	*sliding automated gallery [O]
 
 - Our Community [O]
@@ -15,8 +15,8 @@ What to put in About US?
 - Vision & Mission
   	* same size with history on the left [O]
 	* description [O]
-	* fix borders
-	* improve headings 
+	* fix borders [O]
+	* improve headings [O]
 
 - History [P]
 	*same size with Vision and Mission on the right [O]
@@ -29,15 +29,15 @@ What to put in About US?
 	* clickable left and right or tree design? [?]
 	* tree design [O]
 	* place pictures [P]
-	* improve headings (make it smaller)
-	* improve line spacing & margin 
+	* improve headings (make it smaller) [O]
+	* improve line spacing & margin [O]
 
 - Terms & Regulations [O]
     * Container same as Privacy Policy [O]
 
 - Privacy Policy [O]
 
-- Footer [I]
+- Footer [O]
 
 - Sustainability (*) 
 - Management Policy (*)
