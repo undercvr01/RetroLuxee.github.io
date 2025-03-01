@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Website</title>
+	
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('Background 1.png');">
+<style>
+body {
+  background-image: url('img_girl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+		.glow {
+            font-size: 40px;
+            color: white;
+            text-shadow: 0 0 1px cyan, 0 0 10px cyan, 0 0 20px cyan;
+        }
+
+        .animated-glow {
+            font-size: 40px;
+            color: white;
+            text-shadow: 0 0 5px cyan;
+            animation: glowing 1.5s infinite alternate;
+        }
+
+        @keyframes glowing {
+            0% { text-shadow: 0 0 10px cyan; }
+            50% { text-shadow: 0 0 30px cyan; }
+            100% { text-shadow: 0 0 20px cyan; }
+        }
+		.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	margin-top: 2cm;
+	margin-bottom: 1cm;
+height:150px ;
+width:480px auto;
+}
+	@keyframes a {
+  	  0% { box-shadow: 0 0 10px cyan; }
+ 	   50% { box-shadow: 0 0 20px cyan; }
+ 	   100% { box-shadow: 0 0 10px cyan; }
+	}
+
+	.cool-container2 {
+    	background: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+    	color: cyan;
+	width: 1000px auto;
+	margin-top: 2cm;
+	margin-left: 0cm;
+    	padding: 20px;
+    	border-radius: 50px;
+    	text-align: center;
+    	font-family: "century gothic"; /* Cyberpunk-style font */
+    	animation: a 1.5s infinite alternate;
+	}
+</style>
+  <header>
+    <h1 class="animated-glow"; style="font-family: Arial, sans-serif; color: white; font-size: 90px;text-align:center;">RETRO LUXE</h1>
+<center>
+<div class="container">
+<div style="font-size:20px;margin:8;">aaaa</div></div>
+</center>
+    <nav>
+
+<style>
+
+	.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	margin-top: 2cm;
+}
+
+	
+        .container {
+            width: 60% ;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+border-radius:10px;
+ backdrop-filter: blur(20px);
+border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	margin-top: 2cm;
+        }
+
+	img {
+  		border-radius: 5%;
+		margin-top: 2cm;
+		margin-bottom: 2cm;
+	}	
+
+	.rounded-container {
+		border-radius: 20px;
+		background-color: lightblue;
+		padding: 20px;
+	}
+
+	.center {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 70%;
+	}	
+
+	 body {
+            font-family:century gothic;
+            margin: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            padding: 10px;
+            border-radius: 10px 10px 10px 10px;
+		margin-top: 2cm;
+		 box-shadow: 4px 4px 9px rgba(5, 5, 5, 0.5); /* Shadow effect */
+		background: linear-gradient(45deg, #98deff, #6153ff); /* Gradient effect */
+        }
+        .tab {
+            flex: 1;
+            padding: 8px;
+            text-align: center;
+            cursor: pointer;
+            background: ##98deff;
+            border-right: 1px solid #bbb;
+		font-size: 20px;
+
+        }
+        .tab:last-child {
+            border-right: none;
+        }
+        .tab a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .tab a:hover {
+            font-weight: bold;
+        }
+
+footer {
+background-color: #0c102b; 
+color: white; /* White text color */
+text-align: center;
+padding: 20px;
+}
+	
+    </style>
+</head>
+<body>
+
+	<div class="tab-container">
+        <div class="tabs">
+            <div class="tab"><a href="about.html">About</a></div>
+
+        </div>
+    </div>
+
+<!-- CONTAINER!!! GOTTA EDIT -->
+<!-- 💎💎💎💎homep 💎💎💎💎 -->
+             
+    </nav>
+  </header>
+
+<!-- Credit?s -->
+
+<div class="glass" style="text-align:center">
+<!-- -->
+</div>
+
+  <footer>
+    <p style="font-color: #FFFFFF;">&copy; 2025 RETRO LUXE. All rights reserved.</p>
+  </footer>
+</body>
+</html>
