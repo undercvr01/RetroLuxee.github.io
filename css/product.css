@@ -23,12 +23,7 @@
           "bottom bottom";
      gap: 20px;
      max-width: 1200px;
-     border: 2px solid #e0e0e0;
-     border-radius: 12px;
      padding: 20px;
-     border: 5px solid transparent;
-     background: linear-gradient(white, white) padding-box,
-     linear-gradient(135deg, #d4a373, #e9c46a, #f4a261, #e76f51, #264653, #2a9d8f, #8d99ae) border-box;
 }
 
 /* Image */
@@ -45,16 +40,11 @@
      border: 1px solid #ccc;
      margin-bottom: 50px;
 
-     border: 5px solid transparent;
-     background: linear-gradient(white, white) padding-box,
-          linear-gradient(135deg, rgba(255, 223, 211, 0.8), rgba(211, 232, 255, 0.8)) border-box;
      transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .prod-left-column img:hover {
      transform: scale(1.05);
-     background: linear-gradient(white, white) padding-box,
-          linear-gradient(135deg, #d4a373, #e9c46a, #f4a261, #e76f51, #264653, #2a9d8f, #8d99ae) border-box;
 }
 
 .thumbnail-container {
@@ -76,17 +66,11 @@
      width: 100%;
      height: 100%;
      object-fit: cover;
-
-     border: 5px solid transparent;
-     background: linear-gradient(white, white) padding-box,
-          linear-gradient(135deg, rgba(255, 223, 211, 0.8), rgba(211, 232, 255, 0.8)) border-box;
      transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .prod-thumbnail img:hover {
-     transform: scale(1.05);
-     background: linear-gradient(white, white) padding-box,
-          linear-gradient(135deg, #d4a373, #e9c46a, #f4a261, #e76f51, #264653, #2a9d8f, #8d99ae) border-box;
+     transform: scale(1.25);
 }
 
 /* Product Information */
@@ -235,15 +219,6 @@
      background-color: white;
      text-align: center;
 
-     border: 5px solid transparent;
-     background: linear-gradient(white, white) padding-box,
-          linear-gradient(135deg, rgba(255, 223, 211, 0.8), rgba(211, 232, 255, 0.8)) border-box;
-     transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.prod-tab.active {
-     background: linear-gradient(white, white) padding-box,
-          linear-gradient(135deg, #d4a373, #e9c46a, #f4a261, #e76f51, #264653, #2a9d8f, #8d99ae) border-box;
 }
 
 .prod-tab-content {
@@ -253,20 +228,8 @@
      margin-bottom: 50px;
      text-align: justify;
 
-     border: 2px solid #e0e0e0;
-     border-radius: 0 0 8px 8px;
      padding: 20px;
      min-height: 150px;
-     border: 5px solid transparent;
-     background: linear-gradient(white, white) padding-box,
-          linear-gradient(135deg, rgba(255, 223, 211, 0.8), rgba(211, 232, 255, 0.8)) border-box;
-     transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.prod-tab-content:hover {
-     transform: scale(1.05);
-     background: linear-gradient(white, white) padding-box,
-          linear-gradient(135deg, #d4a373, #e9c46a, #f4a261, #e76f51, #264653, #2a9d8f, #8d99ae) border-box;
 }
 
 /* Carousel Arrows */
@@ -299,3 +262,58 @@
 .carousel-next {
      right: 10px;
 }
+
+/* Lightbox */
+#prod-lightbox {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.8);
+     justify-content: center;
+     align-items: center;
+     z-index: 1000;
+ }
+ 
+ .prod-lightbox-content {
+     position: relative;
+     background: white;
+     padding: 20px;
+     border-radius: 10px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+ 
+ .prod-lightbox-close {
+     position: absolute;
+     top: 10px;
+     right: 15px;
+     font-size: 30px;
+     cursor: pointer;
+ }
+ 
+ #prod-lightbox-img {
+     max-width: 600px;
+     height: auto;
+     border-radius: 10px;
+ }
+ 
+ .prod-lightbox-prev,
+ .prod-lightbox-next {
+     background: none;
+     border: none;
+     font-size: 30px;
+     cursor: pointer;
+     color: black;
+     padding: 10px;
+ }
+ 
+ .prod-lightbox-prev:hover,
+ .prod-lightbox-next:hover {
+     color: gray;
+ }
+ 

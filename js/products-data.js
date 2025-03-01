@@ -134,6 +134,51 @@ const products = {
           longDescription: "This sophisticated midi skirt combines structure and fluidity for a refined yet modern look. The high-waisted fit enhances the silhouette, while the asymmetrical button placement adds visual interest. A small side slit provides ease of movement without sacrificing elegance. Designed with a functional pocket detail, this skirt is both stylish and practical. Pair it with a fitted blouse for a professional setting or a relaxed top for a more casual yet polished outfit.",
           material: "65% polyester, 30% rayon, 5% spandex",
           additionalFeatures: "Functional side pocket, fully lined, asymmetrical button detail"
+     },
+     16: {
+          title: "Gold Bow and Pearl Stud Earrings",
+          price: "$26.00",
+          category: "Jewellery, Women",
+          shortDescription: "Delicate gold-plated stud earrings featuring a sparkling bow design with a dangling faux pearl accent.",
+          longDescription: "These exquisite earrings combine classic elegance with a touch of modern glamour. The gold-plated bow is adorned with tiny crystals, adding a refined sparkle, while the faux pearl drop enhances their timeless appeal. The stud backing ensures a secure fit, making them suitable for both daily wear and special occasions. Whether paired with a sophisticated dress or a chic blouse, these earrings bring a graceful finishing touch to any outfit.",
+          material: "Gold-plated alloy, faux pearl, rhinestones",
+          additionalFeatures: "Lightweight design; hypoallergenic stud closure; polished finish"
+     },
+     17: {
+          title: "Black Tote Bag with Monochrome Scarf Detail",
+          price: "$38.00",
+          category: "Accessories, Women",
+          shortDescription: "A sleek black tote bag featuring a stylish monochrome scarf accent for a sophisticated finish.",
+          longDescription: "This versatile tote bag is crafted from smooth faux leather, offering both durability and elegance. Its spacious interior provides ample room for everyday essentials, making it perfect for work, shopping trips, or casual outings. The attached black and white scarf adds a touch of chic refinement, while the sturdy shoulder straps ensure comfort and reliability. Designed for practicality without compromising on style, this tote is an essential addition to any wardrobe.",
+          material: "Faux leather exterior, polyester lining",
+          additionalFeatures: "Spacious interior; structured silhouette; removable decorative scarf"
+     },
+     18: {
+          title: "Blush Pink Blouse with White Peter Pan Collar",
+          price: "$45.00",
+          category: "Clothing, Women",
+          shortDescription: "A vintage-inspired blush pink blouse featuring a classic white Peter Pan collar and elegant puff sleeves.",
+          longDescription: "This charming blouse is crafted from soft, breathable fabric, designed to provide both comfort and sophistication. The tailored silhouette enhances the figure, while the delicate Peter Pan collar adds a timeless vintage aesthetic. The puffed three-quarter sleeves with fitted white cuffs create a balanced, elegant look suitable for office wear, casual outings, or special occasions. A back zipper ensures ease of wear, making this blouse a graceful addition to any wardrobe.",
+          material: "65% polyester, 35% cotton",
+          additionalFeatures: "Soft-touch fabric; concealed back zip closure; non-stretch fit"
+     },
+     19: {
+          title: "Black T-Strap Heeled Shoes with Bow Detail",
+          price: "$58.00",
+          category: "Footwear, Women",
+          shortDescription: "Elegant black T-strap heels featuring a bow embellishment and a comfortable block heel for vintage charm.",
+          longDescription: "These classic black heels are designed with a vintage-inspired T-strap, secured with an adjustable buckle for a snug fit. The rounded toe shape and bow detail add a playful yet refined touch, while the block heel provides stability and comfort for all-day wear. The cushioned insole enhances comfort, making these shoes perfect for formal events, retro-inspired outfits, or everyday elegance. The subtle scalloped trim adds a feminine finish, elevating these heels into a versatile wardrobe staple.",
+          material: "Faux leather upper, rubber outsole",
+          additionalFeatures: "Padded insole for comfort; slip-resistant sole; secure buckle fastening"
+     },
+     20: {
+          title: "Black and Grey Vintage Midi Dress with Lace-Up Bodice",
+          price: "$72.00",
+          category: "Clothing, Women",
+          shortDescription: "A vintage-style midi dress featuring a black lace-up bodice and a flowing grey skirt for a timeless silhouette.",
+          longDescription: "This retro-inspired dress blends elegance with a touch of drama. The structured black bodice, designed with a lace-up front, creates a flattering, corset-like effect, while the adjustable spaghetti straps ensure a customisable fit. The full grey midi skirt flows gracefully, adding movement and sophistication to the look. Crafted from soft yet durable fabric, this dress is ideal for formal events, vintage-themed outings, or elegant everyday wear. Pair it with classic heels and accessories to complete the look.",
+          material: "Polyester blend fabric",
+          additionalFeatures: "Adjustable straps; zip closure at the back; flared A-line skirt"
      }
 }
 
@@ -162,6 +207,10 @@ const productsImages = {
      },
      5: {
           A: "/img-clothing/y-shoes-feat-01.jpg",
+          B: "/img-clothing/y-shoes-feat-02.jpg",
+          C: "/img-clothing/y-shoes-feat-03.jpg",
+          D: "/img-clothing/y-shoes-feat-04.jpg",
+          E: "/img-clothing/y-shoes-feat-05.jpg",
      },
      6: {
           A: "/img-clothing/r-glv-01.jpg",
@@ -176,6 +225,10 @@ const productsImages = {
      },
      8: {
           A: "/img-clothing/r-shoes-feat-01.jpg",
+          B: "/img-clothing/r-shoes-feat-02.jpg",
+          C: "/img-clothing/r-shoes-feat-03.jpg",
+          D: "/img-clothing/r-shoes-feat-04.jpg",
+          E: "/img-clothing/r-shoes-feat-05.jpg",
      },
      9: {
           A: "/img-clothing/r-bag-01.jpg",
@@ -210,4 +263,33 @@ const productsImages = {
           B: "/img-clothing/g-bot-02.jpg",
           C: "/img-clothing/g-bot-03.jpg",
      },
+     16: {
+          A: "/img-clothing/b-earrings-01.jpg",
+          B: "/img-clothing/b-earrings-02.jpg",
+          C: "/img-clothing/b-earrings-03.jpg",
+     },
+     17: {
+          A: "/img-clothing/b-bag-01.jpg",
+          B: "/img-clothing/b-bag-02.jpg",
+          C: "/img-clothing/b-bag-03.jpg",
+     },
+     18: {
+          A: "/img-clothing/b-top-01.jpg",
+          B: "/img-clothing/b-top-02.jpg",
+          C: "/img-clothing/b-top-03.jpg",
+          D: "/img-clothing/b-top-04.jpg",
+          E: "/img-clothing/b-top-05.jpg",
+     },
+     19: {
+          A: "/img-clothing/b-shoes-feat-01.jpg",
+          B: "/img-clothing/b-shoes-feat-02.jpg",
+          C: "/img-clothing/b-shoes-feat-03.jpg",
+     },
+     20: {
+          A: "/img-clothing/b-bot-01.jpg",
+          B: "/img-clothing/b-bot-02.jpg",
+          C: "/img-clothing/b-bot-03.jpg",
+          D: "/img-clothing/b-bot-04.jpg",
+          E: "/img-clothing/b-bot-05.jpg",
+     }
 };

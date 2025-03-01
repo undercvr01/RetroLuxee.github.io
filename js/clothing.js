@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let modalCategory = document.getElementById("modal-category");
                 modalCategory.style.fontStyle = "italic";
                 if (products[productNumber] && productsImages[productNumber]) {
-                    let firstVariant = Object.keys(productsImages[productNumber])[0]; // Default to first variant
+                    let firstVariant = Object.keys(productsImages[productNumber])[0];
                     if (modalImage) {
                         modalImage.src = productsImages[productNumber][firstVariant];
                         modalImage.alt = products[productNumber].title;
