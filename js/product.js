@@ -178,78 +178,94 @@ function prodChangeQuantity(amount) {
 
 /* Lightbox */
 document.addEventListener("DOMContentLoaded", function () {
-     function createLightbox() {
-          let lightbox = document.createElement("div");
-          lightbox.id = "prod-lightbox";
-          lightbox.innerHTML = `
-             <div class="prod-lightbox-content">
-                 <span class="prod-lightbox-close">&times;</span>
-                 <button class="prod-lightbox-prev">&#10094;</button>
-                 <img id="prod-lightbox-img" src="" alt="">
-                 <button class="prod-lightbox-next">&#10095;</button>
+     function initializeLightbox() {
+         const lightbox = document.createElement("div");
+         lightbox.id = "lightbox";
+         lightbox.innerHTML = `
+             <div class="lightbox-content">
+                 <span class="lightbox-close">&times;</span>
+                 <img id="lightbox-img" src="" alt="">
+                 <button class="lightbox-prev">&#10094;</button>
+                 <button class="lightbox-next">&#10095;</button>
              </div>
          `;
-          document.body.appendChild(lightbox);
-
-          document.querySelector(".prod-lightbox-close").addEventListener("click", function () {
-               lightbox.style.display = "none";
-          });
-
-          document.querySelector(".prod-lightbox-prev").addEventListener("click", prevImage);
-          document.querySelector(".prod-lightbox-next").addEventListener("click", nextImage);
+         document.body.appendChild(lightbox);
+ 
+         const lightboxImg = document.getElementById("lightbox-img");
+         const closeBtn = document.querySelector(".lightbox-close");
+         const prevBtn = document.querySelector(".lightbox-prev");
+         const nextBtn = document.querySelector(".lightbox-next");
+ 
+         let currentIndex = 0;
+         let imageList = [];
+ 
+         // ✅ Lightbox opens only from MAIN IMAGE
+         document.querySelectorAll(".prod-left-column img").forEach(mainImg => {
+             mainImg.addEventListener("click", function () {
+                 const productSlide = mainImg.closest(".prod-slide");
+ 
+                 // ✅ Get all thumbnails for this product
+                 imageList = Array.from(productSlide.querySelectorAll(".prod-thumbnail img"))
+                     .map(img => img.src);
+ 
+                 // ✅ Ensure the lightbox starts with the current main image
+                 currentIndex = imageList.indexOf(mainImg.src);
+                 if (currentIndex === -1) currentIndex = 0;
+ 
+                 updateLightboxImage(currentIndex);
+                 lightbox.style.display = "flex";
+             });
+         });
+ 
+         function updateLightboxImage(index) {
+             if (imageList.length > 0) {
+                 lightboxImg.src = imageList[index];
+                 lightboxImg.alt = `Product Image ${index + 1}`;
+             }
+         }
+ 
+         prevBtn.addEventListener("click", function () {
+             currentIndex = (currentIndex - 1 + imageList.length) % imageList.length;
+             updateLightboxImage(currentIndex);
+         });
+ 
+         nextBtn.addEventListener("click", function () {
+             currentIndex = (currentIndex + 1) % imageList.length;
+             updateLightboxImage(currentIndex);
+         });
+ 
+         closeBtn.addEventListener("click", function () {
+             lightbox.style.display = "none";
+         });
+ 
+         lightbox.addEventListener("click", function (e) {
+             if (e.target === lightbox) {
+                 lightbox.style.display = "none";
+             }
+         });
      }
-
-     let currentIndex = 0;
-     let currentImages = [];
-
-     function openLightbox(productNumber) {
-          let lightbox = document.getElementById("prod-lightbox");
-          let lightboxImg = document.getElementById("prod-lightbox-img");
-
-          currentImages = [];
-          let variants = ["A", "B", "C", "D", "E"];
-          variants.forEach(variant => {
-               if (productsImages[productNumber] && productsImages[productNumber][variant]) {
-                    currentImages.push(productsImages[productNumber][variant]);
-               }
-          });
-
-          if (currentImages.length > 0) {
-               currentIndex = 0;
-               lightboxImg.src = currentImages[currentIndex];
-               lightbox.style.display = "flex";
-          }
+ 
+     function initializeThumbnails() {
+         document.querySelectorAll(".prod-thumbnail img").forEach(thumb => {
+             // ✅ Ensure old click events don't interfere
+             let newThumb = thumb.cloneNode(true);
+             thumb.replaceWith(newThumb);
+ 
+             // ✅ Clicking a thumbnail updates the main image BUT NOT the lightbox
+             newThumb.addEventListener("click", function (event) {
+                 event.preventDefault();
+                 event.stopPropagation(); // 🔥 BLOCK any accidental lightbox triggering
+                 
+                 let mainImg = this.closest(".prod-slide").querySelector(".prod-left-column img");
+                 if (mainImg) {
+                     mainImg.src = this.src;
+                     mainImg.alt = this.alt;
+                 }
+             });
+         });
      }
-
-     function nextImage() {
-          if (currentImages.length === 0) return;
-          currentIndex = (currentIndex + 1) % currentImages.length;
-          document.getElementById("prod-lightbox-img").src = currentImages[currentIndex];
-     }
-
-     function prevImage() {
-          if (currentImages.length === 0) return;
-          currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-          document.getElementById("prod-lightbox-img").src = currentImages[currentIndex];
-     }
-
-     document.querySelectorAll(".prod-left-column img").forEach(img => {
-          img.addEventListener("click", function (event) {
-               // Prevent lightbox from opening if the click comes from a thumbnail change
-               if (event.target.closest(".prod-thumbnail")) return;
-
-               let productKey = this.closest(".prod-slide").getAttribute("data-product");
-               if (!productKey) return;
-               let productNumber = productKey.slice(0, -1);
-               openLightbox(productNumber);
-          });
-     });
-
-     document.querySelectorAll(".prod-thumbnail img").forEach(thumbnail => {
-          thumbnail.addEventListener("click", function (event) {
-               event.stopPropagation(); // Prevent the lightbox from triggering
-          });
-     });
-
-     createLightbox();
-});
+ 
+     initializeLightbox();
+     initializeThumbnails();
+ });
+ 
