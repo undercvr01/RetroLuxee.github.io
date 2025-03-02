@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Luxe</title>
+  <link rel="stylesheet" href="/css/customer_service.css">
+  <script src="/js/customer_service.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Retro Luxe</div>
+    <ul class="navigation">
+      <li><a href="/products">Products</a>
+        <ul class="dropdown">
+          <li><a href="/products/category1">Placeholder</a></li>
+          <li><a href="/products/category2">Placeholder</a></li>
+          <li><a href="/products/category3">Placeholder</a></li>
+        </ul>
+      </li>
+      <li><a href="/newsletter">Newsletter</a></li>
+      <li><a href="/about-us">About Us</a></li>
+      <li><a href="/customer-service">Customer Service</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Customer Service</h1>
+  </header>
+
+  <div class="container">
+    <section class="service-section">
+      <div class="contact-methods">
+        <h2>Contact Us</h2>
+        <p>We are here to assist you.</p>
+<p>If you need assistance, get in touch with us using the following methods:</p>
+        <ul>
+          <li>Email: <a href="mailto:support@retroluxe.com">support@retroluxe.com</a></li>
+          <li>Phone: +637-689-900 </li>
+          <li>Telephone: (02)867-2815</li>
+        </ul>
+        <a href="mailto:support@retroluxe.com" class="cta-button">Send an Email</a>
+      </div>
+
+      <!-- FAQs -->
+      <div class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <strong>How do I track my order?</strong>
+          <p>Once your order is shipped, you'll receive an email with tracking details. Simply click the link in the email to track your shipment.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <strong>What is your return policy?</strong>
+          <p>We offer a 30-day return policy. Products must be returned in their original condition. Contact customer service to initiate a return.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+          <strong>Can I change my order?</strong>
+          <p>If your order hasn't shipped yet, we can make changes. Please reach out to us as soon as possible for assistance.</p>
+        </div>
+        <a href="#faqs" class="cta-button">View More FAQs</a>
+
+        <button onclick="toggleAllFAQs()" class="cta-button">Show All FAQs</button>
+      </div>
+
+      <!-- Support Tickets -->
+      <div class="support-tickets">
+        <h2>Submit a Support Ticket</h2>
+        <p>If your issue is not covered by the FAQs, submit a support ticket, and our team will assist you promptly.</p>
+        <form id="ticket-form" onsubmit="validateTicketForm(event)">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="cta-button">Submit Ticket</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="shopping-support">
+      <h2>Your Shopping Help</h2>
+      <p>If you need assistance with finding products, completing checkout, or managing your account, visit our shopping support page for help.</p>
+      <a href="/shopping-support" class="cta-button">Go to Shopping Support</a>
+    </section>
+  </div>
+
+  <button id="scrollToTopBtn" onclick="scrollToTop()" style="display:none;">↑</button>
+
+  <footer>
+    <p>&copy; 2025 Retro Luxe.</p>
+  </footer>
+
+</body>
+</html>
