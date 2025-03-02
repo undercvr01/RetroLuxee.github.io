@@ -1,6 +1,18 @@
 // IMPORT AREA
 
-//*******************Variables******************
+/* TABLE OF CONTENTS:
+
+Author: Catherine Grace Labrador
+Section: AM11
+Last Update: March 01, 2025
+
+NOTE: Refer to the long green lines to know which sections you are in
+0.) VARIABLES
+1.) MAIN CODE
+2.) FUNCTIONS
+
+*/
+//**********************************************Variables*************************************************//
 let c1Section = document.getElementsByClassName("cl-1")[0];
 let para1 = c1Section.getElementsByTagName("p");
 let head1 = c1Section.getElementsByTagName("h2");
@@ -24,9 +36,11 @@ let hide2 = document.getElementById("cl-cont-2");
 let toggle3 = false;
 let hide3 = document.getElementById("toggablemenu");
 let hidden3 = document.getElementById("cl-cont-3");
+let set_sigma;
+let set_sigma2;
 // let index2 = 1;
 
-//***************MAIN CODE*******************
+//*******************************************************MAIN CODE***************************************************
 
 //Sliding images function on section1
 window.addEventListener("scroll", function(){
@@ -37,7 +51,7 @@ if(window.scrollY < 300){
 setInterval(slideImgFunc1, 5000);
 
 //follow sticky text on section1
-window.addEventListener("scrollend", myFunc2);
+// window.addEventListener("scrollend", myFunc2);
 
 //toggable image on container/last section
 hidecontainerFunc1();
@@ -51,24 +65,34 @@ hide2.addEventListener("click", function(){
         toggle2++;
         hidecontainerFunc2();
 });
+
+//skibidi ohio gyatt omsim
 hide3.addEventListener("mouseenter", function(){
+        hidden3.classList.remove("show-1");
+
         toggle3 = true;
         hidecontainerFunc3();
-});
-hidden3.addEventListener("mouseover", function(){
-        toggle3 = true;
-        hidecontainerFunc3();
+        clearTimeout(set_sigma);
+        clearTimeout(set_sigma2);
 });
 hidden3.addEventListener("mouseenter", function(){
+        hidden3.classList.remove("show-1");
         toggle3 = true;
         hidecontainerFunc3();
+        clearTimeout(set_sigma);
+        clearTimeout(set_sigma2);
 });
+//hidden3 is cl-cont-3
 hidden3.addEventListener("mouseleave", function(){
         toggle3 = false;
-        hidecontainerFunc3();
+        set_sigma = setTimeout(() =>{
+                hidden3.classList.add("show-1");
+        }, 300);  
+        set_sigma2 = setTimeout(hidecontainerFunc3, 2500);
 });
 
-//***************functions******************
+
+//*******************************************************functions*********************************************************//
 
 function hidecontainerFunc1(){
         if (toggle1%2!=0){
@@ -92,56 +116,6 @@ function hidecontainerFunc3(){
                 hidden3.style.display = "block";
         }
 }
-// function hidecontainerFunc3(){
-//         if (toggle3 == false){
-//                 animationtest();
-//         }else if(toggle3 == true) {
-//                 hidden3.style.display = "block";
-        
-//         }else if(toggle3==null){
-//                 hidden3.style.display = "none";
-//         }
-// }
-// let test1;
-// function animationtest() {
-//         let pos = 0;
-//         let x = 1;
-//         clearInterval(test1);
-//         test1 = setInterval(() =>{
-
-//                 if (pos>-100){
-//                         pos= pos-10;
-//                         x = x-0.2
-//                         hidden3.style.transform = `translateX(${pos}px)`;
-//                         hidden3.style.opacity = x;
-                        
-//                 }else if(toggle3==true){
-//                         clearInterval(test1);
-//                 }
-//                 else{
-//                         clearInterval(test1);
-//                         hidden3.style.display = "none";
-//                 }
-//         }, 20);
-// }
-// if (toggle3==true){
-//         clearTimeout(mygay);
-//         hidden3.style.opacity = 1;
-//         index2 = 1;
-// }
-// function hide(){
-        
-//         if(index2 >= 0){         
-//                 hidden3.style.opacity = index2;
-//                 index2 = index2 - 0.1;
-//                 mygay = setTimeout(hide, 200);
-//         }else{
-//                 hidden3.style.display = "none";
-//                 index2 = 1 ;
-//         }
-       
-        
-// }
 
 function slideImgFunc1(){
 index++;
@@ -167,12 +141,4 @@ function myFunc() {
         */
         head1[0].style.transform =`translateY(${scrollfunc + 5}px)`;
 };
-
-function myFunc2(){
-
-        /* 
-        document.querySelector(".cl-2").innerHTML= "";
-        STATUS: it works
-        */
-}
 

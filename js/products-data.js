@@ -37,13 +37,13 @@ const products = {
           additionalFeatures: "Fully lined for added comfort; concealed side zipper closure"
      },
      5: {
-          title: "Yellow and White Mary Jane Heels",
+          title: "White Block Heel Mary Jane Shoes",
           price: "$78.00",
           category: "Footwear, Women",
-          shortDescription: "Charming yellow and white Mary Jane heels featuring a vintage-inspired double-strap design and bow details.",
-          longDescription: "These retro-style Mary Jane heels combine playful charm with classic elegance. The striking combination of white and sunny yellow adds a cheerful touch, while the double-strap design with gold-tone buckles ensures a secure and adjustable fit. Delicate bow embellishments and scalloped trim enhance their feminine appeal. The sturdy block heel provides comfort and stability, making them suitable for both daily wear and special occasions. Whether styled with a vintage dress or a contemporary outfit, these shoes add a unique flair to any look.",
-          material: "Glossy patent faux leather upper, cushioned leather insole, rubber sole",
-          additionalFeatures: "Adjustable double-strap buckle closure; non-slip sole; soft inner lining"
+          shortDescription: "Elegant white Mary Jane heels featuring a minimalist design with a single strap and gold-tone button detail.",
+          longDescription: "These classic Mary Jane heels offer a sophisticated blend of vintage charm and modern simplicity. Designed with a sleek, glossy white finish, they feature a single strap with a gold-tone button accent for a refined touch. The block heel provides stability and comfort, making them ideal for everyday wear or special occasions. Their versatile design pairs effortlessly with dresses, skirts, or tailored outfits, adding a timeless elegance to any look.",
+          material: "Glossy faux leather upper, cushioned inner sole, rubber outsole",
+          additionalFeatures: "Single-strap closure with gold-tone button; non-slip sole; soft inner lining"
      },
      6: {
           title: "Black Lace Mesh Gloves",
@@ -67,10 +67,10 @@ const products = {
           title: "Red and White Mary Jane Heels",
           price: "$55.00",
           category: "Footwear, Women",
-          shortDescription: "Vintage-style red and white Mary Jane heels with a decorative bow and sturdy block heel.",
-          longDescription: "These charming Mary Jane heels combine classic vintage aesthetics with modern comfort. The glossy red patent finish is complemented by white detailing, featuring delicate scalloped edges. A bold red bow on the toe adds a playful yet elegant touch. The adjustable strap ensures a secure fit, while the block heel provides stability and support. Perfect for retro-inspired outfits, these shoes are a stylish addition to any wardrobe.",
-          material: "Patent faux leather upper, cushioned leather insole, rubber sole",
-          additionalFeatures: "Adjustable buckle strap, non-slip sole, soft inner lining"
+          shortDescription: "Charming red Mary Jane heels with white scalloped trim, a decorative bow, and a sturdy block heel.",
+          longDescription: "These elegant Mary Jane heels feature a vibrant red faux leather exterior with delicate white detailing along the edges. The classic round-toe design is adorned with a soft white bow, adding a touch of vintage charm. An adjustable red buckle strap provides a secure and customizable fit, while the sturdy block heel offers both style and stability. Perfect for retro-inspired looks, cosplay, or adding a playful yet sophisticated touch to your wardrobe.",
+          material: "Faux leather upper, cushioned insole, rubber outsole",
+          additionalFeatures: "Adjustable buckle strap, non-slip rubber sole, soft inner lining"
      },
      9: {
           title: "Black Velvet Handbag with Crystal Buckle",
