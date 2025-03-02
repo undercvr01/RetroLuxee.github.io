@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Luxe Newsletter</title>
+    <style>
+        /* Styles (unchanged from earlier) */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .newsletter-container {
+            display: flex;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .newsletter-header {
+            text-align: center;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .greeting {
+            font-size: 1.2em;
+            color: #777;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .shop-button {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #ff6f61;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .shop-button:hover {
+            background-color: #e55b50;
+        }
+
+        .featured-items {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .item {
+            text-align: center;
+            width: 30%;
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .sidebar {
+            width: 200px;
+            padding-top: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 12px 20px;
+            background-color: #ff6f61;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .sidebar a:hover {
+            background-color: #e55b50;
+        }
+
+        .newsletter-footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+        }
+
+        .social-links {
+            margin: 20px 0;
+        }
+
+        .social-link {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #ff6f61;
+        }
+
+        .social-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="newsletter-container">
+        
+        <div class="content">
+            <header class="newsletter-header">
+                <h1>Retro Luxe</h1> <!-- Title remains Retro Luxe -->
+                <img src="https://i.pinimg.com/originals/3a/62/1b/3a621ba394a2afb710a536006a829621.jpg" alt="Retro Luxe Collection" width="200" height="300" class="header-image">
+            </header>
+
+            <section class="content-section">
+                <p class="greeting">Hello [Customer's Name],</p>
+                <p>Welcome to Retro Luxe, where we bring you the best of timeless fashion. From flowy dresses to chic accessories, we have everything you need to channel your inner retro diva.</p>
+
+                <h2>New Collection: Retro Luxury Awaits</h2>
+                <p>Embrace vintage-inspired designs with our newest arrivals that capture the essence of retro elegance.</p>
+
+                <div class="featured-items">
+                    <div class="item">
+                        
+                        <img src="https://girlgloss.com/wp-content/uploads/2013/11/Retro-Dresses-31.jpg" width="300" height="300" alt="Retro Dresses and Tops">
+                        <p>Dresses/Tops</p>
+                    </div>
+                    <div class="item">
+                        
+                        <img src="https://img1.shopcider.com/product/1633940104000-mnHWNd.jpg" width="300" height="300" alt="Skirts/Jeans">
+                        <p>Skirts/Jeans</p>
+                    </div>
+                    <div class="item">
+                        
+                        <img src="https://cdn.shopify.com/s/files/1/0229/0897/products/1940s_wide_brim_straw_hat_with_ribbon_trim-004_1024x1024.JPG?v=1443047034" width="300" height="300" alt="Headdress/Earrings">
+                        <p>Headdress/Earrings</p>
+                    </div>
+                    <div class="item">
+                        
+                        <img src="https://i.pinimg.com/originals/5e/ed/74/5eed7406aa2436ac71490db746f85b6a.jpg" width="300" height="300" alt="Shoes/Bags">
+                        <p>Shoes/Bags</p>
+                    </div>
+                </div>
+
+                <p><a href="#" class="shop-button">Shop Now</a></p>
+
+                <h2>Style Tips: Embrace the Retro Glam</h2>
+                <ul>
+                    <li><strong>Flared Jeans:</strong> Go for bold, wide-legged denim for a true retro vibe.</li>
+                    <li><strong>Statement Tops:</strong> Opt for flowy blouses and graphic tees with bold prints.</li>
+                    <li><strong>Vintage Accessories:</strong> Add a touch of glamour with headdresses, chunky jewelry, and wide-brimmed hats.</li>
+                </ul>
+
+                <h2>Bestsellers: Retro Luxe Faves</h2>
+                <ul>
+                    <li><strong>The Daisy Mae Dress</strong> – A must-have classic piece.</li>
+                    <li><strong>The Retro Wrap Skirt</strong> – Effortlessly chic and timeless.</li>
+                </ul>
+                <p><a href="#" class="shop-button">Shop Bestsellers</a></p>
+
+                <h2>Exclusive Offer: 15% Off Your Next Purchase</h2>
+                <p>As a thank you for being part of the Retro Luxe fashion family, enjoy 15% off your next purchase with code <strong>RETRO15</strong>. Don't miss out!</p>
+                <p><a href="#" class="shop-button">Shop Now</a></p>
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <a href="#">Shop New Arrivals</a>
+            <a href="#">Shop Bestsellers</a>
+            <a href="#">Exclusive Offers</a>
+            <a href="#">Follow Us</a>
+        </div>
+    </div>
+
+  
+    <footer class="newsletter-footer">
+        <p>Follow us on social media for daily inspiration, giveaways, and more!</p>
+        <div class="social-links">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Facebook</a>
+        </div>
+        <p>&copy; 2025 Retro Luxe. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
