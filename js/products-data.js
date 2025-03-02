@@ -179,6 +179,55 @@ const products = {
           longDescription: "This retro-inspired dress blends elegance with a touch of drama. The structured black bodice, designed with a lace-up front, creates a flattering, corset-like effect, while the adjustable spaghetti straps ensure a customisable fit. The full grey midi skirt flows gracefully, adding movement and sophistication to the look. Crafted from soft yet durable fabric, this dress is ideal for formal events, vintage-themed outings, or elegant everyday wear. Pair it with classic heels and accessories to complete the look.",
           material: "Polyester blend fabric",
           additionalFeatures: "Adjustable straps; zip closure at the back; flared A-line skirt"
+     },
+     21: {
+          title: "Chiffon Cherry Print Petticoat",
+          price: "$30.00",
+          category: "Tops, Women",
+          shortDescription: "A vintage-inspired sheer chiffon Petticoat featuring a playful cherry print.",
+          longDescription: "This lightweight chiffon blouse is designed with a fresh mint green base and a vibrant cherry print. It has a semi-sheer texture, button-down front, and a relaxed fit, making it perfect for layering or wearing on its own. The delicate collar and subtle pleating add a touch of elegance, making it suitable for both casual and dressy occasions.",
+          material: "100% Chiffon",
+          additionalFeatures: "Breathable and lightweight, buttoned front, slightly transparent for a delicate look."
+     },
+
+     22: {
+          title: "Elegant White Satin Clutch Bag",
+          price: "$35.00",
+          category: "Bags, Women",
+          shortDescription: "A vintage-inspired white satin clutch with a rhinestone clasp.",
+          longDescription: "This sophisticated clutch bag features a luxurious white satin exterior adorned with an elegant bow design. The structured silver-tone metal frame adds durability, while the ornate rhinestone clasp closure provides a refined finishing touch. It is compact yet spacious enough to hold essential items, making it a perfect accessory for evening events or weddings.",
+          material: "Satin with metal frame",
+          additionalFeatures: "Interior slip pocket, secure kiss-lock closure, detachable chain strap for versatile styling."
+     },
+
+     23: {
+          title: "Retro Cat-Eye Sunglasses",
+          price: "$25.00",
+          category: "Accessories, Women",
+          shortDescription: "Oversized mint green cat-eye sunglasses with gradient lenses.",
+          longDescription: "These stylish sunglasses blend retro glamour with modern flair. The oversized frame in a soft mint green hue complements a variety of outfits, while the gradient brown lenses provide excellent UV protection. The sturdy yet lightweight design ensures comfort, making them an ideal accessory for sunny days.",
+          material: "Polycarbonate frame, UV400 protection lenses",
+          additionalFeatures: "Scratch-resistant lenses, lightweight and durable construction, comfortable nose pads."
+     },
+
+     24: {
+          title: "Vintage-Inspired T-Strap Heels",
+          price: "$50.00",
+          category: "Shoes, Women",
+          shortDescription: "Patent leather T-strap heels in mint and white with bow details.",
+          longDescription: "These vintage-style heels offer a charming blend of retro and modern design. The glossy patent leather upper features a two-tone mint and white colour scheme with scalloped edges and a delicate bow detail. A sturdy block heel provides comfortable elevation, while the T-strap and adjustable buckle ensure a secure fit. Perfect for adding a playful yet elegant touch to any outfit.",
+          material: "Patent leather upper, rubber sole",
+          additionalFeatures: "Cushioned insole for comfort, non-slip outsole, adjustable ankle strap."
+     },
+
+     25: {
+          title: "Mint Green Buttoned Playsuit",
+          price: "$55.00",
+          category: "Clothing, Women",
+          shortDescription: "A sleeveless mint green playsuit with front button details.",
+          longDescription: "Designed for effortless elegance, this structured playsuit features a fitted bodice with a sweetheart neckline and wide shoulder straps. The high-waisted shorts offer a flattering silhouette, while the button-front detail adds a subtle vintage touch. Crafted from a breathable fabric with a hint of stretch, this piece is ideal for warm weather outings.",
+          material: "Cotton blend with slight stretch",
+          additionalFeatures: "Side zipper closure, functional front buttons, tailored fit for a sleek appearance."
      }
 }
 
@@ -291,5 +340,28 @@ const productsImages = {
           C: "/img-clothing/b-bot-03.jpg",
           D: "/img-clothing/b-bot-04.jpg",
           E: "/img-clothing/b-bot-05.jpg",
+     },
+     21: {
+          A: "/img-clothing/c-bot-01.jpg",
+          B: "/img-clothing/c-bot-02.jpg",
+     },
+     22: {
+          A: "/img-clothing/c-bag-01.jpg",
+          B: "/img-clothing/c-bag-02.jpg",
+          C: "/img-clothing/c-bag-03.jpg",
+     },
+     23: {
+          A: "/img-clothing/c-sunglasses-01.jpg",
+     },
+     24: {
+          A: "/img-clothing/c-shoes-feat-01.jpg",
+          B: "/img-clothing/c-shoes-feat-02.jpg",
+          C: "/img-clothing/c-shoes-feat-03.jpg",
+     },
+     25: {
+          A: "/img-clothing/c-top-01.jpg",
+          B: "/img-clothing/c-top-02.jpg",
+          C: "/img-clothing/c-top-03.jpg",
+          D: "/img-clothing/c-top-04.jpg",
      }
 };
