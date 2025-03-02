@@ -136,6 +136,11 @@ body{
     button:hover{
         background-color: #abf8ff2d;
     }
+
+    #toggablemenu img{
+    width: 65px;
+    height: 65px;
+    }
 }
 
 .footer-cl{
