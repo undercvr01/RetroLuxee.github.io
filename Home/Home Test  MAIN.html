@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Brown Tabs</title>
+    <style>
+        
+
+
+    	body {
+        	background-image: url('image.png'); 
+        	background-size: cover; 
+        	background-position: center; 
+	        background-repeat: no-repeat; 
+        	min-height: 100vh; /* Full viewport height */
+        	margin: 0;
+    	}
+
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            background-color: #794A3A;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+		font-family:serif;
+        }
+
+        .tab {
+    		display: flex; 
+    		align-items: center; 
+    		gap: 8px; 
+    		color: white;
+    		padding: 12px 18px;
+    		text-decoration: none;
+    		text-align: center;
+    		margin: 0 5px;
+    		border-radius: 5px;
+    		transition: background-color 0.3s ease;
+	}
+
+	.tab-logo {
+   		 width: 50px;
+    		height: 50px; 
+		margin-left: ;
+	}	
+
+        .tab:hover {
+            background-color: #F57F58;
+        }
+
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+            text-align: center;
+        }
+
+	.animated-glow {
+            font-size: 40px;
+            color: white;
+            text-shadow: 0 0 5px #F57F58;
+            animation: glowing 1.5s infinite alternate;
+        }
+
+        @keyframes glowing {
+            0% { text-shadow: 0 0 10px #F57F58; }
+            50% { text-shadow: 0 0 30px #F57F58; }
+            100% { text-shadow: 0 0 20px #F57F58; }
+        }
+
+	.fixed-image{
+		width: 1000px;
+		height: 143px;
+		object-fit: cover;
+		margin-top:5cm;
+		margin-bottom:2cm;
+	}	
+	
+	.ugly {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+
+	.kms {
+        max-width: 600px; 
+        height: auto; 
+	margin: auto;
+	margin-top:-5cm;
+    	}
+
+	footer {
+	background-color: #793a3a; 
+	color: white; /* White text color */
+	text-align: center;
+	padding: 20px;
+	font-family:serif;
+	}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 80vw; /* Adjust width relative to viewport */
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Images */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;  /* Hide all images initially */
+    animation: slideshow 8s infinite;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+
+@keyframes slideshow {
+    0% { opacity: 0; }
+    20% { opacity: 1; } /* Image fades in */
+    50% { opacity: 1; } /* Hold visibility */
+    70% { opacity: 0; } /* Image fades out */
+    100% { opacity: 0; }
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain;
+	margin-top:-12cm;
+}
+
+    </style>
+</head>
+<body style="background-image: url('.png');" class="fixedbg">
+
+    <div class="tab-container">
+        <img src="logo.png" class="tab-logo">
+    
+        	<a href="#" class="tab">PRODUCTS</a>
+        	<a href="#" class="tab">NEWSLETTER</a>
+        	<a href="#" class="tab">ABOUT US</a>
+	        <a href="#" class="tab">CUSTOMER SERVICE</a>
+	</div>
+</div>
+
+<!--       ========================Poopy Logo========================         -->
+<center>
+<img src="RETRO LUXE.png" class="fixed-image">
+</center>
+<!--       ========================Poopy Logo========================         -->
+
+
+<div class="ugly">
+<center>
+
+<div class="slideshow-container">
+
+        <div class="slide fade">
+            <img src="retromodel.png" class="kms">
+        </div>
+
+        <div class="slide fade">
+            <img src="retromodelpoo.png" class="kms">
+    	</div>
+
+</center>
+</div>
+
+  <footer>
+    <p style="font-color: #794A3A;">&copy; 2025 RETRO LUXE. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
