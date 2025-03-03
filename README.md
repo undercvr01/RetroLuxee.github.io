@@ -7,8 +7,10 @@
 ## folders
   ### home
   ### newsletter
+  ### products
   ### about-us
   ### customer-service
 
-  ### img
+  ### img-main
   ### img-products
+  ### 

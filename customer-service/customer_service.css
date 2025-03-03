@@ -4,7 +4,7 @@ src: url(Font/Reality-Stone.ttf);
 }
 
 body {
-  background-image: url('/img/retro_bg_12.jpg');
+  background-image: url('/img-main/retro_bg_12.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
