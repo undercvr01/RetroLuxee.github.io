@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (products[productNumber] && productsImages[productNumber] && productsImages[productNumber][productVariant]) {
                 let imgElement = item.querySelector(".c-product-image img");
                 let titleElement = item.querySelector(".product-title");
-                let priceElement = item.querySelector(".product-price");
                 let quickViewBtn = item.querySelector(".c-quick-view");
 
                 if (imgElement) {
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     imgElement.alt = products[productNumber].title;
                 }
                 if (titleElement) titleElement.textContent = products[productNumber].title;
-                if (priceElement) priceElement.textContent = products[productNumber].price;
                 if (quickViewBtn) quickViewBtn.setAttribute("data-product", productNumber);
             }
         });
@@ -32,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 let modal = document.getElementById("modal");
                 let modalImage = document.getElementById("modal-left-image");
                 let modalTitle = document.getElementById("modal-title");
-                let modalPrice = document.getElementById("modal-price");
                 let modalDescription = document.getElementById("modal-long-description");
                 let modalCategory = document.getElementById("modal-category");
                 modalCategory.style.fontStyle = "italic";
@@ -43,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         modalImage.alt = products[productNumber].title;
                     }
                     if (modalTitle) modalTitle.textContent = products[productNumber].title;
-                    if (modalPrice) modalPrice.textContent = products[productNumber].price;
                     if (modalDescription) modalDescription.textContent = products[productNumber].longDescription;
                     if (modalCategory) modalCategory.textContent = products[productNumber].category;
                     if (modal) modal.style.display = "flex";

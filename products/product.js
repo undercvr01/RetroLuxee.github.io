@@ -17,11 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     // Right Column
                     let titleElement = slide.querySelector(".prod-title");
-                    let priceElement = slide.querySelector(".prod-price");
                     let shortDescElement = slide.querySelector(".prod-shortDesc");
                     let categoryElement = slide.querySelector(".prod-category");
                     if (titleElement) titleElement.textContent = products[productNumber].title;
-                    if (priceElement) priceElement.textContent = products[productNumber].price;
                     if (shortDescElement) shortDescElement.textContent = products[productNumber].shortDescription;
                     if (categoryElement) categoryElement.textContent = products[productNumber].category;
 
@@ -162,19 +160,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
      initializeProducts();
 });
-
-/* Quantity */
-function prodChangeQuantity(amount) {
-     let quantityInput = document.getElementById("prod-quantity");
-     if (!quantityInput) {
-          console.error("Element with ID 'prod-quantity' not found.");
-          return;
-     }
-     let currentValue = parseInt(quantityInput.value) || 0;
-     if (currentValue + amount > 0) {
-          quantityInput.value = currentValue + amount;
-     }
-}
 
 /* Lightbox */
 document.addEventListener("DOMContentLoaded", function () {
