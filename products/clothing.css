@@ -1,36 +1,33 @@
+/* General Container */
 .c-container {
-     margin-bottom: 40px;
+     margin-bottom: 4vw;
      background: #fff;
-     padding: 20px;
-     border: 1px solid #ddd;
+     padding: 2vw;
+     border: 0.1vw solid #ddd;
 }
 
 .c-container h1,
 .c-container h2 {
-     margin-bottom: 10px;
+     margin-bottom: 1vw;
+     font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 
 .c-container p {
-     margin-bottom: 10px;
+     margin-bottom: 1vw;
+     font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
+/* Full Map */
 #c-full-dress-map a {
      display: block;
      text-decoration: none;
      color: inherit;
-     border: 1px dashed #ccc;
-     padding: 40px;
+     border: 0.1vw dashed #ccc;
+     padding: 4vw;
      text-align: center;
 }
 
-#c-gallery {
-     position: relative;
-}
-
-#c-product {
-     position: relative;
-}
-
+/* Carousel */
 .c-carousel {
      width: 100%;
      overflow: hidden;
@@ -42,6 +39,7 @@
      display: block;
 }
 
+/* Lightbox */
 .c-lightbox {
      display: none;
      position: fixed;
@@ -57,25 +55,25 @@
 
 .c-lightbox-content {
      background: #fff;
-     padding: 20px;
-     max-width: 800px;
+     padding: 2vw;
+     max-width: 80vw;
      width: 90%;
-     position: relative;
      display: flex;
      flex-wrap: wrap;
 }
 
 .c-lightbox-thumbnails {
-     margin-top: 20px;
+     margin-top: 2vw;
      display: flex;
      justify-content: center;
 }
 
 .c-lightbox-thumbnails img {
-     width: 80px;
-     margin: 0 5px;
+     width: 8vw;
+     max-width: 80px;
+     margin: 0 0.5vw;
      cursor: pointer;
-     border: 2px solid transparent;
+     border: 0.2vw solid transparent;
 }
 
 .c-lightbox-thumbnails img.active {
@@ -94,7 +92,8 @@
 
 .c-products-grid {
      display: grid;
-     grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 2vw;
      justify-content: center;
      align-items: center;
 }
@@ -110,7 +109,7 @@
 .c-product-image {
      width: 100%;
      max-width: 375px;
-     height: 400px;
+     height: auto;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -119,9 +118,8 @@
 
 .c-product-image img {
      width: 100%;
-     height: 100%;
+     height: auto;
      object-fit: cover;
-     aspect-ratio: 1 / 1;
      transition: transform 0.3s ease-in-out;
 }
 
@@ -132,32 +130,33 @@
 .c-product-info {
      flex-grow: 1;
      width: 100%;
-     padding: 10px 0;
+     padding: 1vw 0;
 }
 
 .c-product-info h3 {
-     font-size: 28px;
-     margin: 10px 0;
+     font-size: clamp(1.5rem, 3vw, 2rem);
+     margin: 1vw 0;
 }
 
 .c-product-info p {
-     font-size: 22px;
+     font-size: clamp(1.2rem, 2vw, 1.5rem);
      color: #555;
 }
 
+/* Quick View */
 .c-quick-view {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top: 10px;
-     font-size: 1.5em;
+     margin-top: 1vw;
+     font-size: clamp(1.2rem, 2.5vw, 1.5rem);
      color: #333;
      cursor: pointer;
 }
 
 .eye-icon::before {
      content: '\1F441';
-     font-size: 1.5em;
+     font-size: clamp(1.2rem, 2.5vw, 1.5rem);
 }
 
 /* Modal Box View */
@@ -176,13 +175,13 @@
 
 .c-modal-content {
      background: #fff;
-     max-width: 1300px;
+     max-width: 80vw;
      width: 75%;
-     height: 60%;
+     height: auto;
      display: flex;
-     padding: 50px;
-     position: relative;
-     gap: 25px;
+     flex-wrap: wrap;
+     padding: 5vw;
+     gap: 2vw;
 }
 
 .c-modal-left {
@@ -191,14 +190,13 @@
      justify-content: center;
      width: 100%;
      max-width: 450px;
-     height: 450px;
+     height: auto;
      overflow: hidden;
 }
 
 .c-modal-left img {
-     padding: 10px;
-     width: 350px;
-     height: 450px;
+     width: 100%;
+     height: auto;
      object-fit: cover;
      transition: transform 0.3s ease-in-out;
 }
@@ -212,30 +210,79 @@
      display: flex;
      flex-direction: column;
      justify-content: center;
-     padding: 10px 0;
+     padding: 1vw 0;
 }
 
 .c-modal-right h3 {
-     font-size: 28px;
-     margin: 10px 0;
+     font-size: clamp(1.5rem, 3vw, 2rem);
+     margin: 1vw 0;
 }
 
 .c-modal-right h2 {
-     font-size: 24px;
-     margin: 10px 0;
+     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+     margin: 1vw 0;
 }
 
 .c-modal-right p {
-     font-size: 22px;
+     font-size: clamp(1rem, 2vw, 1.5rem);
      color: #555;
-     margin: 10px 0;
+     margin: 1vw 0;
      text-align: justify;
 }
 
 .c-modal-close {
      position: absolute;
-     top: 20px;
-     right: 20px;
+     top: 1vw;
+     right: 1.5vw;
      cursor: pointer;
-     font-size: 1.5em;
+     font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+     .c-products-grid {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     }
+
+     .c-modal-content {
+          flex-direction: column;
+          padding: 3vw;
+     }
+
+     .c-modal-left {
+          max-width: 100%;
+          height: auto;
+     }
+
+     .c-modal-right {
+          text-align: center;
+     }
+}
+
+@media (max-width: 600px) {
+     .c-container {
+          padding: 3vw;
+     }
+
+     .c-lightbox-thumbnails img {
+          width: 6vw;
+     }
+
+     .c-product-info h3 {
+          font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+     }
+
+     .c-product-info p {
+          font-size: clamp(1rem, 2vw, 1.3rem);
+     }
+
+     .c-modal-content {
+          width: 90%;
+     }
+
+     .c-modal-right h3,
+     .c-modal-right h2,
+     .c-modal-right p {
+          font-size: clamp(1rem, 2.5vw, 1.5rem);
+     }
 }
