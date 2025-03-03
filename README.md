@@ -4,7 +4,10 @@
 ## sub-branches
   ### _vicente-feature | vicente's sub-branch
 
-## folders
+## non-official folders
+  ### _draft
+
+## official folders
   ### home
   ### newsletter
   ### products
@@ -13,4 +16,6 @@
 
   ### img-main
   ### img-products
-  ### 
+
+  ### main
+  ### fonts
