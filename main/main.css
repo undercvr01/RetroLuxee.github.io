@@ -164,6 +164,39 @@ body {
      }
  }
 
+
+ /* <div class="header-wrapper">
+        <nav class="newsletter-header">
+            <div class="logo-container">
+                <img src="../images/logo.png" alt="Retro Luxe Logo" class="logo">
+            </div>
+        </nav>
+    </div>
+    */
+
+    .header-wrapper {
+        background-color: #f6e3b7; /* Warm peach color for header */
+        padding: 20px 0;
+        text-align: center; /* Center everything in the header */
+    }
+
+    /* Logo styling */
+    .logo-container {
+        margin-bottom: 10px; /* Space between logo and title */
+    }
+
+    .logo {
+        width: 50px; 
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .newsletter-header h1 {
+        font-size: 2.5em;
+        color: #333;
+        /* margin: 20px 0; */
+        border-bottom: 2px solid #333; /* Simple black line under title */
+        padding-bottom: 10px;
+    }
  @keyframes cl-3-anim { 
      from {
          opacity: 0.4;
