@@ -1,6 +1,6 @@
 @font-face {
 font-family: 'Header1';
-src: url(Font/Reality-Stone.ttf);
+src: url(fonts/Reality-Stone.ttf);
 }
 
 body {
@@ -46,6 +46,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  #resolution {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 nav .logo {
