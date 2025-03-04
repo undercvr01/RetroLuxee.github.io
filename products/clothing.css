@@ -90,10 +90,22 @@
      min-height: 100vh;
 }
 
-.c-products-grid {
+/* Default for .c-products-grid-2 (3 columns) */
+.c-products-grid-2 {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
-     gap: 12vw;
+     gap: 5vw;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     max-width: 1200px;
+}
+
+/* Default for .c-products-grid-1 (2 columns) */
+.c-products-grid-1 {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 5vw;
      justify-content: center;
      align-items: center;
      width: 100%;
@@ -163,16 +175,20 @@
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
-     .c-products-grid {
+     .c-products-grid-2 {
           grid-template-columns: repeat(2, 1fr);
-          /* 2 items per row for tablets */
      }
 }
 
 @media (max-width: 768px) {
-     .c-products-grid {
+     .c-products-grid-2 {
           grid-template-columns: repeat(1, 1fr);
-          /* 1 item per row for mobile */
+     }
+}
+
+@media (max-width: 1024px) {
+     .c-products-grid-1 {
+          grid-template-columns: repeat(1, 1fr); 
      }
 }
 
@@ -307,8 +323,9 @@
      }
 
      .c-modal-close {
-          top: 2vw;
-          right: 3vw;
+          top: 2rem;
+          right: 2rem;
+          font-size: 1.8rem;
      }
 }
 
@@ -324,8 +341,10 @@
      }
 
      .c-modal-close {
-          top: 3vw;
-          right: 4vw;
-          font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+          top: 1.5rem;
+          right: 1.5rem;
+          font-size: 1.5rem;
+          min-width: 35px;
+          min-height: 35px;
      }
 }

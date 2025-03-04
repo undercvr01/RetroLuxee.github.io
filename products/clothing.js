@@ -1,4 +1,4 @@
-/* RELATED PRODUCTS */
+/* MAIN | RELATED PRODUCTS */
 document.addEventListener("DOMContentLoaded", function () {
     function initializeProducts() {
         document.querySelectorAll(".c-product-item").forEach(item => {
