@@ -1,73 +1,130 @@
 .circle-nav {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
      display: flex;
-     gap: 10px;
-     justify-content: center;
+     flex-direction: column;
      align-items: center;
-     flex-wrap: wrap;
-     padding: 20px;
+     gap: 10px;
+     z-index: 1000;
 }
 
 .circle-btn {
+     display: none;
      width: 50px;
      height: 50px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-decoration: none;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 50px;
      font-size: 18px;
      font-weight: bold;
      color: white;
-     border-radius: 50%;
-     transition: transform 0.2s ease-in-out, opacity 0.2s;
+     text-decoration: none;
+     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+     opacity: 0;
 }
 
 .circle-btn:hover {
      transform: scale(1.1);
-     opacity: 0.8;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .red {
-     background-color: #8B0000;
+     background: red;
 }
 
 .green {
-     background-color: #006400;
+     background: green;
 }
 
 .yellow {
-     background-color: #8B8000;
+     background: yellow;
+     color: black;
 }
 
 .black {
-     background-color: #222222;
+     background: black;
 }
 
 .cyan {
-     background-color: #008B8B;
+     background: cyan;
+     color: black;
+}
+
+.menu-toggle {
+     width: 60px;
+     height: 60px;
+     background: #333;
+     color: white;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 60px;
+     font-size: 24px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle:hover {
+     transform: rotate(90deg) scale(1.1);
+}
+
+.circle-nav.open .circle-btn {
+     display: block;
+     opacity: 1;
+     animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+          transform: translateY(10px);
+     }
+
+     to {
+          opacity: 1;
+          transform: translateY(0);
+     }
 }
 
 @media (max-width: 768px) {
      .circle-nav {
-          gap: 8px;
-          padding: 15px;
+          bottom: 15px;
+          right: 15px;
+     }
+
+     .menu-toggle {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 20px;
      }
 
      .circle-btn {
-          width: 40px;
-          height: 40px;
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
           font-size: 16px;
      }
 }
 
 @media (max-width: 480px) {
      .circle-nav {
-          gap: 5px;
-          padding: 10px;
+          bottom: 10px;
+          right: 10px;
+     }
+
+     .menu-toggle {
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          font-size: 18px;
      }
 
      .circle-btn {
-          width: 38px;
-          height: 38px;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
           font-size: 14px;
      }
 }
