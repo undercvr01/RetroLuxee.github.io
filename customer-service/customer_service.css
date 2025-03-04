@@ -262,7 +262,10 @@ footer {
   margin-top: 50px;
 }
 
-footer p {
-  margin: 0;
-  font-size: 0.9em;
+.developers {
+  text-align: center;
+}
+
+.developers p {
+  margin: 10px 0;
 }
