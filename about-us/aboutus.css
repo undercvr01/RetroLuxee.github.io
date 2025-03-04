@@ -26,28 +26,30 @@ NOTE: Refer to the long green lines to know which sections you are in
 
 /********************************************************* SECTION 1 ******************************************************/
 .cl-1 section{
-     display: flex; 
+     /* display: flex;  */
      overflow: hidden;
 }
 
-.cl-1 aside{
+/* .cl-1 aside{
     width: 32.5% ;
     height: 800px;
     overflow: hidden;
     position: relative; 
     
-}
-
+} */
+/* 
 .imgwrap-1{
     display: flex;
     width: 100%;
     transition: transform 1s ease-in-out;
-}
+} */
 
 .cl-1 main{
-        flex:1;
-        padding-top: 4%;
-        background-image: url(PICTURES/cl-5.png) !important;
+        height: 600px;
+        padding-top: 3%;
+        justify-content: center;
+        align-items: center ;
+        /* background-image: url(PICTURES/cl-5.png) !important; */
         /* background-image: radial-gradient( rgb(255, 241, 213), rgb(72, 17, 0)); */
         /* background-color: rgba(79, 20, 1, 0.278); */
         background-repeat: no-repeat; 
@@ -55,6 +57,7 @@ NOTE: Refer to the long green lines to know which sections you are in
         background-blend-mode: multiply;
         text-align: center;
         position: relative;
+        margin: 2px;
         /*test attributes here*/
     }
 
@@ -62,38 +65,41 @@ NOTE: Refer to the long green lines to know which sections you are in
         animation-name: cl-1-anim-h1;
         animation-duration: 1.5s;
         position: sticky;
-        text-shadow: 2px 2px 3px #222;
+        text-shadow: 2px 2px 5px #d4cbbf;
     }
 
 .cl-1 p{
     text-align: center;
     margin: 0 2% 0 2%; 
-    text-shadow: 2px 2px 3px #222;
+    text-shadow: 2px 2px 5px #222;
 }
 .cl-1 h2, p{
     /*test attributes here*/
     position: sticky;
 }
 
-.cl-1 img{
+/* .cl-1 img{
         object-fit: contain;
-        /* object-position: right top; */
+        /* object-position: right top; 
         height: 100%;
         max-width: 500px;
         max-height: 904px;
-    }
+    } 
+    */
 
 /******************************************************** SECTION 2 ******************************************************/
 .cl-2{
     background-image: url("PICTURES/cl-6.jpg");
+    background-color: rgba(250, 235, 215, 0.701);
+    background-blend-mode: lighten;
     text-align: center;
     padding: 20px;
     
 }
 .cl-2 h3{
     display: block;
-    text-shadow: 2px 2px 2px#222;
-    background-color: #38231cee;
+    text-shadow: 2px 2px 10px#d4cbbf;
+    background-color: #ffffffbe;
     padding-top: 40px;
     padding-left: 30%;
     padding-right: 30%;
@@ -101,7 +107,7 @@ NOTE: Refer to the long green lines to know which sections you are in
 }
 
 .cl-2 p{
-    background-color: #38231cee;
+    background-color: #ffffffbe;
     display: block;
     justify-content: center;
     text-align: justify;
@@ -131,8 +137,8 @@ NOTE: Refer to the long green lines to know which sections you are in
     overflow: hidden;
     position: relative;
     justify-content: left;
-    border: solid #fff;
-    background-color: #3b0000;
+    border: solid #d4cbbf;
+    /* background-color: #3b0000; */
 }
 
 .cl-3 main{
@@ -140,9 +146,9 @@ NOTE: Refer to the long green lines to know which sections you are in
     flex: 1;
     overflow: hidden;
     position: relative;
-    width: 50%;
-    border: solid #fff;
-    background-color: #192f2d;
+    /* width: 50%; */
+    border: solid #d4cbbf;
+    /* background-color: #192f2d; */
 }
 
 .cl-3 h4, p{
@@ -151,9 +157,13 @@ NOTE: Refer to the long green lines to know which sections you are in
 }
 .cl-3 main img{
     float: left;
-    display: flex;
-    width: 200px;
-    height: 200px;
+    display: block;
+    /* width: 200px;
+    height: 200px; */
+    /* width: 20dvw;
+    height: 20dvh; */
+    width: 20%;
+    height: auto;
     margin: 10px;
 }
 
@@ -173,8 +183,8 @@ NOTE: Refer to the long green lines to know which sections you are in
     /* flex-direction: row;  */
     justify-content: center;
     align-items: center;
-    margin-right: 10%;
-    margin-left:10%;
+    /* margin-right: 10%;
+    margin-left:10%; */
     text-align: center;
 
 }
@@ -187,8 +197,10 @@ NOTE: Refer to the long green lines to know which sections you are in
 .cl-4 img{
     /* width: 120%;
     height: 120%; */
-    max-width: 200px;
-    max-height: 200px;
+    /* max-width: 200px;
+    max-height: 200px; */
+    max-width: 20dvw;
+    max-height: 20dvh;
     width: auto;
     height: auto;
     
@@ -196,11 +208,13 @@ NOTE: Refer to the long green lines to know which sections you are in
 
 .cl-4_3{
     display: block;
-    width: 200px;
+    width: 20dvw;
+    height: 40dvh;
+    object-fit: cover;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 0 10% 5% 10%;
+    margin: 0 10% 0 10%;
     /* margin: 0 0 5% 0; */
 }
 
@@ -215,22 +229,23 @@ NOTE: Refer to the long green lines to know which sections you are in
     display: block;
     text-align: center;
     margin: 0 !important;
-    font-size: 20px;
+    font-size: 2dvh;
     
 }
 .cl-4 h5{
     display: block;
     text-align: center;
     margin: 0 !important;
+    /* font-size: 1.5dvh; */
     
 }
 
 /******************************************************** SECTION 5 ******************************************************/
 
 #cl-5{
-    background-color: #3b0000a1;
-    background-image: url(PICTURES/cl-10.jpg); 
-    background-blend-mode: color-burn;
+    background-color: #e4dbce9a;
+    /* background-image: url(PICTURES/cl-10.jpg) !important;  */
+    background-blend-mode: lighten;
     background-size: contain;
 }
 
@@ -283,7 +298,7 @@ NOTE: Refer to the long green lines to know which sections you are in
 
 /******************************************************** HIDDEN CONTAINERS ******************************************************/
 .cl-container #cl-hidden1{
-    background-color: #34291ecc;
+    background-color: #ebdbcccc;
     bottom : -100px;
     padding: 5px 10% 5px 10%;
     margin: 0 15% 0 15%;
@@ -291,7 +306,7 @@ NOTE: Refer to the long green lines to know which sections you are in
 }
 
 .cl-container #cl-hidden2{
-    background-color: #34291ecc;
+    background-color: #ebdbcccc;
     top :-100px;
     padding: 5px 10% 5px 10%;
     margin: 0 15% 0 15%;
@@ -305,7 +320,7 @@ NOTE: Refer to the long green lines to know which sections you are in
         transform:translateY(-130px);
     }
     to {
-        color: #fffcec; 
+        color: #000000; 
     }
 }
 

@@ -90,6 +90,21 @@ hidden3.addEventListener("mouseleave", function(){
         }, 300);  
         set_sigma2 = setTimeout(hidecontainerFunc3, 2500);
 });
+hide3.addEventListener("click", function(){
+        hidden3.classList.remove("show-1");
+        if (toggle3==false){
+                toggle3 = true;
+                hidecontainerFunc3();
+                clearTimeout(set_sigma);
+                  clearTimeout(set_sigma2)
+        }else{
+                toggle3 = false;
+                set_sigma = setTimeout(() =>{
+                        hidden3.classList.add("show-1");
+                }, 300);  
+                set_sigma2 = setTimeout(hidecontainerFunc3, 2500);
+        }
+});
 
 
 //*******************************************************functions*********************************************************//
