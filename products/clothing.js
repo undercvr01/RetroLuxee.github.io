@@ -70,3 +70,58 @@ document.addEventListener("DOMContentLoaded", function () {
         initializeModalClose();
     }, 100);
 });
+
+/* FULL OUTFIT PART */
+let currentImages = [];
+let currentIndex = 0;
+
+document.addEventListener("DOMContentLoaded", function () {
+    const productGrid = document.getElementById("outfitProductGrid");
+    const fullOutfit = document.getElementById("c-full-outfit");
+    let productNumbers = fullOutfit.getAttribute("data-product-numbers").split(",").map(p => p.trim());
+    let totalProducts = 0;
+
+    productNumbers.forEach(productNumber => {
+        if (productsImages[productNumber]) {
+            let defaultVariant = "A";
+            let productDiv = document.createElement("div");
+            productDiv.classList.add("c-outfit-product-image");
+
+            let img = document.createElement("img");
+            img.src = productsImages[productNumber][defaultVariant];
+            img.alt = `${products[productNumber].title} - Variant ${defaultVariant}`;
+            img.dataset.productNumber = productNumber;
+            img.addEventListener("click", function () {
+                openLightbox(productNumber);
+            });
+
+            productDiv.appendChild(img);
+            productGrid.appendChild(productDiv);
+            totalProducts++;
+        }
+    });
+
+    let columns = Math.min(5, totalProducts);
+    productGrid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+});
+
+function openLightbox(productNumber) {
+    currentImages = Object.values(productsImages[productNumber]);
+    currentIndex = 0;
+    document.getElementById("outfitLightboxImage").src = currentImages[currentIndex];
+    document.getElementById("outfitLightbox").style.display = "flex";
+}
+
+function closeLightbox() {
+    document.getElementById("outfitLightbox").style.display = "none";
+}
+
+function changeImage(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) {
+        currentIndex = currentImages.length - 1;
+    } else if (currentIndex >= currentImages.length) {
+        currentIndex = 0;
+    }
+    document.getElementById("outfitLightboxImage").src = currentImages[currentIndex];
+}

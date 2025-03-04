@@ -14,7 +14,7 @@
      <script src="/products/product.js" defer></script>
      <script src="/products/clothing.js" defer></script>
 
-     <title>Clothing 1 - Red</title>
+     <title>Poppy’s Nostalgia</title>
 </head>
 
 <body>
@@ -26,9 +26,31 @@
           <a href="clothing5.html">5</a>
      </nav>
 
-     <div id="c-full-dress-map" class="c-container">
-          <h1>Full Dress Map</h1>
-          <a href="#">Clickable Map Placeholder</a>
+     <!-- FULL OUTFIT -->
+     <div id="c-full-outfit" class="c-container" data-product-numbers="7,10,8,6,9">
+          <h1>Poppy’s Nostalgia</h1>
+          <p>
+               This striking look blends vintage elegance with a touch of bold sophistication. The striped puff-sleeve
+               blouse, with its rust-red and cream hues, sailor collar, and cropped fit, creates a nostalgic yet playful
+               foundation. Paired with the high-waisted pleated skirt in deep rust, the structured silhouette enhances
+               movement and grace, while the decorative belt adds a refined touch. The black lace mesh gloves, with
+               their delicate ruffled cuffs, introduce a layer of mystery and timeless appeal, complementing the outfit
+               with subtle intricacy. Elevating the style, the red and white Mary Jane heels offer a charming contrast,
+               their scalloped trim and decorative bow infusing the look with vintage allure. Completing the aesthetic,
+               the black velvet handbag with its dazzling crystal buckle adds just the right amount of glamour, ensuring
+               a polished and effortlessly sophisticated finish.
+          </p>
+
+          <div class="c-outfit-products-grid" id="outfitProductGrid"></div>
+     </div>
+
+     <div class="outfit-lightbox" id="outfitLightbox">
+          <span class="close" onclick="closeLightbox()">&times;</span>
+          <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+          <div class="outfit-lightbox-content">
+               <img id="outfitLightboxImage" src="" alt="">
+          </div>
+          <span class="next" onclick="changeImage(1)">&#10095;</span>
      </div>
 
      <!-- MAIN PRODUCTS -->

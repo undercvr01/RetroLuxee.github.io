@@ -14,7 +14,7 @@
      <script src="/products/product.js" defer></script>
      <script src="/products/clothing.js" defer></script>
 
-     <title>Clothing 4 - Black</title>
+     <title>Midnight Grace</title>
 </head>
 
 <body>
@@ -26,9 +26,23 @@
           <a href="clothing5.html">5</a>
      </nav>
 
-     <div id="c-full-dress-map" class="c-container">
-          <h1>Full Dress Map</h1>
-          <a href="#">Clickable Map Placeholder</a>
+     <!-- FULL OUTFIT -->
+     <div id="c-full-outfit" class="c-container" data-product-numbers="18,20,19,16,17">
+          <h1>Midnight Grace</h1>
+          <p>
+               This refined look blends classic charm with modern elegance, creating an effortlessly polished appearance. The blush pink blouse, adorned with a crisp white Peter Pan collar and delicate puff sleeves, adds a touch of soft femininity. Paired with the black and grey vintage midi dress, the lace-up bodice provides a structured, corset-like silhouette, while the flowing grey skirt adds graceful movement. The black T-strap heeled shoes, featuring a bow embellishment and a sturdy block heel, enhance the vintage aesthetic while ensuring comfort. For accessories, the black tote bag with its monochrome scarf detail introduces a sophisticated contrast, while the gold bow and pearl stud earrings bring a delicate sparkle. Completing the look, the mint green quilted handbag with its pearl handle and gold-tone chain offers a charming pop of colour, balancing the muted tones with an air of refined luxury.
+          </p>
+
+          <div class="c-outfit-products-grid" id="outfitProductGrid"></div>
+     </div>
+
+     <div class="outfit-lightbox" id="outfitLightbox">
+          <span class="close" onclick="closeLightbox()">&times;</span>
+          <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+          <div class="outfit-lightbox-content">
+               <img id="outfitLightboxImage" src="" alt="">
+          </div>
+          <span class="next" onclick="changeImage(1)">&#10095;</span>
      </div>
 
      <!-- MAIN PRODUCTS -->

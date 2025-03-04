@@ -14,7 +14,7 @@
      <script src="/products/product.js" defer></script>
      <script src="/products/clothing.js" defer></script>
 
-     <title>Clothing 5 - Cherry</title>
+     <title>Blossom & Cherries</title>
 </head>
 
 <body>
@@ -26,9 +26,32 @@
           <a href="clothing5.html">5</a>
      </nav>
 
-     <div id="c-full-dress-map" class="c-container">
-          <h1>Full Dress Map</h1>
-          <a href="#">Clickable Map Placeholder</a>
+     <!-- FULL OUTFIT -->
+     <div id="c-full-outfit" class="c-container" data-product-numbers="25,21,24, 23,22">
+          <h1>Blossom & Cherries</h1>
+          <p>
+               This charming look blends soft pastels with classic details, creating a refined yet lively appearance.
+               The mint green buttoned playsuit, with its structured fit and sweetheart neckline, provides a fresh and
+               flattering silhouette, while the front button detailing adds a subtle vintage charm. Layered over it, the
+               chiffon cherry print petticoat introduces a delicate touch with its sheer fabric and vibrant cherry
+               pattern, perfect for a light and breezy feel. The vintage-inspired T-strap heels in mint and white
+               enhance the colour palette, their scalloped edges and bow details offering a playful yet polished finish.
+               The elegant white satin clutch bag, adorned with a rhinestone clasp, complements the outfit with a hint
+               of luxury, while the retro cat-eye sunglasses in mint green add a stylish and dramatic edge. Tying
+               everything together, the gold bow and pearl stud earrings bring a touch of refinement, completing the
+               look with understated elegance.
+          </p>
+
+          <div class="c-outfit-products-grid" id="outfitProductGrid"></div>
+     </div>
+
+     <div class="outfit-lightbox" id="outfitLightbox">
+          <span class="close" onclick="closeLightbox()">&times;</span>
+          <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+          <div class="outfit-lightbox-content">
+               <img id="outfitLightboxImage" src="" alt="">
+          </div>
+          <span class="next" onclick="changeImage(1)">&#10095;</span>
      </div>
 
      <!-- MAIN PRODUCTS -->
