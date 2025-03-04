@@ -519,7 +519,7 @@
      align-items: center;
      justify-content: center;
      text-align: center;
-     min-height: 60vh;
+     min-height: 70vh;
      padding: 20px;
      box-sizing: border-box;
 }
@@ -529,7 +529,7 @@
 }
 
 #c-full-outfit p {
-     max-width: 600px;
+     max-width: 1250px;
      font-size: 1.25rem;
 }
 
