@@ -1,15 +1,8 @@
 @font-face {
-     font-family: 'Reality Stone';
-     src: url('/fonts/reality stone.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
-}
-
-@font-face {
-     font-family: 'Cormorant Garamond Medium';
-     src: url(../about-us/fonts/CormorantGaramond-Medium.ttf) format('truetype');
-     font-weight: normal;
-     font-style: normal;
+    font-family: 'Reality Stone';
+    src: url(../fonts/Reality\ Stone.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 h1,
@@ -18,203 +11,223 @@ h3,
 h4,
 h5,
 h6 {
-     font-family: 'Reality Stone', sans-serif;
+    font-family: 'Reality Stone', sans-serif;
 }
 
 @font-face {
-     font-family: 'Cormorant Garamond Medium';
-     src: url('/fonts/CormorantGaramond-Medium.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
+    font-family: 'Cormorant Garamond Medium';
+    src: url(../fonts/CormorantGaramond-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 p {
-     font-family: 'Cormorant Garamond Medium', serif;
+    font-family: 'Cormorant Garamond Medium', serif;
 }
 
 @font-face {
-     font-family: 'Cormorant Garamond Regular';
-     src: url('/fonts/CormorantGaramond-Regular.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
+    font-family: 'Cormorant Garamond Regular';
+    src: url('../fonts/CormorantGaramond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-     font-family: 'Cormorant Garamond Regular', serif;
-     background-color: #f4f4f4;
-     padding: 20px;
+    font-family: 'Cormorant Garamond Regular', serif;
+    background-color: #f4f4f4;
+    padding: 20px;
 }
 
 .divider {
-     height: 60px;
-     width: 100%;
+    height: 60px;
+    width: 100%;
 }
 
-#toggablemenu{
+    /*
+    <button id="toggablemenu">
+    <img src="pictures/cl-4_dropdwn.png" alt="dropdown"></button>
+    <div id="cl-cont-3">
+           <ul>
+               <li><a href="../products/clothing1.html">Products</a></li>
+               <li><a href="../newsletter/Newsletter.html">Newsletter</a></li>
+               <li><a href="../about-us/aboutus.html">About Us</a></li>
+               <li><a href="../customer-service/customerservice.html">Customer Service</a></li>
+           </ul>
+       </div>
+    */
+    .dropdownmenu{
+       margin: auto;
+   
+       nav {
+           
+           /* padding-left:  50px; */
+           padding: 20px;
+           background-color: #f6e3b7;
+           text-align: right;
+           /* white-space: nowrap; */
+           letter-spacing: 1.5px;
+   
+       }
+       a{
+          text-align: right;
+          color: antiquewhite;
+           text-decoration: none;
+           margin-left: 30px
+       }
+   
+       a:hover{
+           text-decoration: underline;
+       }
+       button{
+           display: flex;
+           position: fixed;
+           background-color: #48443a;
+           color: black;
+           padding: 20px;
+           margin-left: 2px;
+           border-radius: 5px;
+           width: 65px;
+           height: 65px;
+           border: none;
+           z-index: 1000;
+           cursor: pointer;
+           }
+       
+       button:hover{
+           background-color: #abf8ff2d;
+       }
+   }
 
-     button{
-          display: flex;
-          position: fixed;
-          background-color: #48443a;
-          color: black;
-          padding: 20px;
-          margin-left: 2px;
-          border-radius: 5px;
-          width: 65px;
-          height: 65px;
-          border: none;
-          z-index: 1000;
-          cursor: pointer;
-     }
- 
-     button:hover{
-          background-color: #abf8ff2d;
-     }
+#cl-cont-3{
+    display: none;
+    float: left;
+    background-color: rgba(59, 34, 31, 0.905);
+    z-index: 900;
+    overflow: visible;
+    position: fixed;
+    box-shadow: 0px 5px 15px #1a0d00;
+    transition: transform 2.5s ease-in;
+    /* transform: translateX(0px); */
+    margin: 0;
+    padding: 0;
 
-     /*
-     <button id="toggablemenu">
-     <img src="pictures/cl-4_dropdwn.png" alt="dropdown"></button>
-     <div id="cl-cont-3">
-            <ul>
-                <li><a href="../products/clothing1.html">Products</a></li>
-                <li><a href="../newsletter/Newsletter.html">Newsletter</a></li>
-                <li><a href="../about-us/aboutus.html">About Us</a></li>
-                <li><a href="../customer-service/customerservice.html">Customer Service</a></li>
-            </ul>
-        </div>
-     */
+}
+
+.show-1{
+    animation-name: cl-3-anim-out;
+    animation-duration: 1s;
+    /* transition: transform 2.5s ease-in-out opacity 2.5s ease-in-out; */
+    transition: transform 0.3s ease-in;
+    transform: translateX(-500px);
 }
 
 #cl-cont-3{
-     display: none;
-     float: left;
-     background-color: rgba(59, 34, 31, 0.905);
-     z-index: 900;
-     overflow: visible;
-     position: fixed;
-     box-shadow: 0px 5px 15px #1a0d00;
-     transition: transform 2.5s ease-in;
-     /* transform: translateX(0px); */
-     margin: 0;
-     padding: 0;
- 
- }
- 
-.show-1{
-     animation-name: cl-3-anim-out;
-     animation-duration: 1s;
-     /* transition: transform 2.5s ease-in-out opacity 2.5s ease-in-out; */
-     transition: transform 0.3s ease-in;
-     transform: translateX(-500px);
- }
- 
- #cl-cont-3{
-     animation-name: cl-3-anim; 
-     animation-duration: 1.5s;
-     height: 300vh;
-     a{
-         text-decoration: none;
-     }
-     ul{
-         /* list-style-image: url('PICTURES/cl-11.png'); */
-         list-style: none;
-         padding-top: 50px;
-         padding-left: 0;
-     }
-     li{
-         
-         padding: 5px 50px 5px 25px;
-         font-size: 25px;
-         display: block;
-         margin-bottom: 5px;
-         position: relative;
-         /* padding-left: 30px; */
-         cursor: pointer;
-     }
-     li::before{
-         content: "";
-         position: absolute;
-         left: 0;
-         top: 50%;
-         transform: translateY(-50%);
-         background: url('PICTURES/cl-11.png') no-repeat left center;
-         background-size: cover;
-         width: 30px;
-         height: 30px;
-         transition: transform 0.3s ease-in-out;
-         margin-left: 20px;
-         /* padding-left: 20px; */
-     }
-     li:hover::before{
-         transform: translateY(-50%) rotate(90deg);
-         /* background-color: #000000f5; */
-     }
-     li:hover{
-         /* background: ; */
-         /* transform: rotateZ(90deg); */
-         /* text-decoration: underline; */
-         background-color: rgba(141, 4, 4, 0.382);
-         cursor: pointer;
-     }
- }
-
-
- /* <div class="header-wrapper">
-        <nav class="newsletter-header">
-            <div class="logo-container">
-                <img src="../images/logo.png" alt="Retro Luxe Logo" class="logo">
-            </div>
-        </nav>
-    </div>
-    */
-
-    .header-wrapper {
-        background-color: #f6e3b7; /* Warm peach color for header */
-        padding: 20px 0;
-        text-align: center; /* Center everything in the header */
+    animation-name: cl-3-anim; 
+    animation-duration: 1.5s;
+    height: 300vh;
+    a{
+        text-decoration: none;
     }
-
-    /* Logo styling */
-    .logo-container {
-        margin-bottom: 10px; /* Space between logo and title */
+    ul{
+        /* list-style-image: url('PICTURES/cl-11.png'); */
+        list-style: none;
+        padding-top: 50px;
+        padding-left: 0;
     }
-
-    .logo {
-        width: 50px; 
-        height: auto; /* Maintain aspect ratio */
+    li{
+        
+        padding: 5px 50px 5px 25px;
+        font-size: 25px;
+        display: block;
+        margin-bottom: 5px;
+        position: relative;
+        /* padding-left: 30px; */
+        cursor: pointer;
     }
-
-    .newsletter-header h1 {
-        font-size: 2.5em;
-        color: #333;
-        /* margin: 20px 0; */
-        border-bottom: 2px solid #333; /* Simple black line under title */
-        padding-bottom: 10px;
+    li::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url('../about-us/pictures/cl-11.png') no-repeat left center;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        transition: transform 0.3s ease-in-out;
+        margin-left: 20px;
+        /* padding-left: 20px; */
     }
- @keyframes cl-3-anim { 
-     from {
-         opacity: 0.4;
-         transform:translateX(-100px)
-     }
-     to {
-         opacity: 1;
-         transform: translateX(0px);
-     }
- }
- 
- @keyframes cl-3-anim-out {
-     from{
-         opacity: 1;
-         transform: translateX(0px);
-     } to {
-         opacity: 0.4;
-         transform: translateX(-100px);
-     }
-     
- }
+    li:hover::before{
+        transform: translateY(-50%) rotate(90deg);
+        /* background-color: #000000f5; */
+    }
+    li:hover{
+        /* background: ; */
+        /* transform: rotateZ(90deg); */
+        /* text-decoration: underline; */
+        background-color: rgba(141, 4, 4, 0.382);
+        cursor: pointer;
+    }
+}
+
+
+/* <div class="header-wrapper">
+       <nav class="newsletter-header">
+           <div class="logo-container">
+               <img src="../images/logo.png" alt="Retro Luxe Logo" class="logo">
+           </div>
+       </nav>
+   </div>
+   */
+
+   .header-wrapper {
+       background-color: #f6e3b7; /* Warm peach color for header */
+       padding: 20px 0;
+       text-align: center; /* Center everything in the header */
+   }
+
+   /* Logo styling */
+   .logo-container {
+       margin-bottom: 10px; /* Space between logo and title */
+   }
+
+   .logo {
+       width: 50px; 
+       height: auto; /* Maintain aspect ratio */
+   }
+
+   .newsletter-header h1 {
+       font-size: 2.5em;
+       color: #333;
+       /* margin: 20px 0; */
+       border-bottom: 2px solid #333; /* Simple black line under title */
+       padding-bottom: 10px;
+   }
+@keyframes cl-3-anim { 
+    from {
+        opacity: 0.4;
+        transform:translateX(-100px)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes cl-3-anim-out {
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    } to {
+        opacity: 0.4;
+        transform: translateX(-100px);
+    }
+    
+}

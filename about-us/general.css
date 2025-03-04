@@ -37,7 +37,7 @@ NOTE: Refer to the long green lines to know which sections you are in
 }
 /*************************************************************** general styling ********************************************************/
 h1, h2, h3, h4{
-    font-family: 'subHeader';
+    font-family: 'subHeader' !important;
     color: #000000;
     letter-spacing: 3px;
 }
@@ -64,20 +64,20 @@ h4{
     font-size: 3dvh;
 }
 h5{
-    font-family: 'main2-content';
+    font-family: 'main2-content' !important;
     color: #2f2117;
 }
 h6{
-    font-family: 'main3-content';
+    font-family: 'main3-content' !important;
     color: #2f2117;
 }
 a, nav, button{
-    font-family: 'main3-content';
+    font-family: 'main3-content' !important;
     color: #000000;
 }
 
 p, li{
-    font-family: 'main-content';
+    font-family: 'main-content' !important;
     color: #000000;
     /* font-size: 20px; */
     /* font-size: 1.25em; */
