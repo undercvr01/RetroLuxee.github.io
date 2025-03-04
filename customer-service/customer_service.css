@@ -1,6 +1,6 @@
 @font-face {
 font-family: 'Header1';
-src: url(fonts/Reality-Stone.ttf);
+src: url('fonts/Reality-Stone.ttf');
 }
 
 body {
@@ -46,14 +46,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 600px) {
-  #resolution {
-    font-size: 16px;
-    text-align: center;
-    margin-top: 20px;
-  }
 }
 
 nav .logo {
@@ -276,4 +268,48 @@ footer {
 
 .developers p {
   margin: 10px 0;
+}
+
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav .logo {
+    font-size: 1.5em;
+  }
+
+  nav .navigation {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  nav .navigation.active {
+    display: flex;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .service-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-section div {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  #ticket-form input, #ticket-form textarea {
+    font-size: 14px;
+  }
 }
