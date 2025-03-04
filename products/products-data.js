@@ -232,7 +232,6 @@ const products = {
 }
 
 /* Product Images */
-
 const productsImages = {
      1: {
           A: "/img-products/y-glv-01.jpg",
