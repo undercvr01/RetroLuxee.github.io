@@ -135,6 +135,15 @@
      text-align: center;
 }
 
+.prod-tab:hover {
+     background-color: #f5f5f5;
+}
+
+.prod-tab.active {
+     background-color: #ddd;
+     border-bottom-color: white;
+}
+
 .prod-tab-content {
      width: 100%;
      font-size: clamp(1rem, 2vw, 1.5rem);

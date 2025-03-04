@@ -68,8 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     tabContent.textContent = products[productNumber].longDescription;
                } else if (tab.textContent === "Additional Information") {
                     tabContent.innerHTML = `<strong>Material:</strong> ${products[productNumber].material}<br><strong>Additional Features:</strong> ${products[productNumber].additionalFeatures}`;
-               } else if (tab.textContent === "Reviews") {
-                    tabContent.textContent = "Reviews content will be displayed here.";
+               } else if (tab.textContent === "Disclaimer") {
+                    tabContent.textContent = products[productNumber].disclaimer;
                }
           });
      });
