@@ -5,6 +5,13 @@
      font-style: normal;
 }
 
+@font-face {
+     font-family: 'Cormorant Garamond Medium';
+     src: url(../about-us/fonts/CormorantGaramond-Medium.ttf) format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
 h1,
 h2,
 h3,
