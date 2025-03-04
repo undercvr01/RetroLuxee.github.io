@@ -32,16 +32,15 @@
 }
 
 .red {
-     background: red;
+     background: rgb(85, 0, 0);
 }
 
 .green {
-     background: green;
+     background: rgb(0, 70, 0);
 }
 
 .yellow {
-     background: yellow;
-     color: black;
+     background: rgb(160, 160, 0);
 }
 
 .black {
@@ -49,8 +48,7 @@
 }
 
 .cyan {
-     background: cyan;
-     color: black;
+     background: rgb(0, 95, 95);
 }
 
 .menu-toggle {
