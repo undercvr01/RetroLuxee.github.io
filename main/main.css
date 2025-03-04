@@ -10,10 +10,21 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
+h6 {
      font-family: 'Reality Stone', sans-serif;
 }
+
+@font-face {
+     font-family: 'Cormorant Garamond Medium';
+     src: url('/fonts/CormorantGaramond-Medium.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+p {
+     font-family: 'Cormorant Garamond Medium', serif;
+}
+
 
 * {
      box-sizing: border-box;
