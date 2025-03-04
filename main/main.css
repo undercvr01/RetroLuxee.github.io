@@ -203,12 +203,17 @@ body {
        height: auto; /* Maintain aspect ratio */
    }
 
-   .newsletter-header h1 {
+   .newsletter-header{
+    justify-content: center;
+       align-items: center;
+    h1 {
        font-size: 2.5em;
        color: #333;
        /* margin: 20px 0; */
        border-bottom: 2px solid #333; /* Simple black line under title */
        padding-bottom: 10px;
+       
+    }
    }
 @keyframes cl-3-anim { 
     from {
