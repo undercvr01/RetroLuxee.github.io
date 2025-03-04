@@ -182,7 +182,7 @@ const products = {
      },
      21: {
           title: "Chiffon Cherry Print Petticoat",
-          category: "Tops, Women",
+          category: "Bottoms, Women",
           shortDescription: "A vintage-inspired sheer chiffon Petticoat featuring a playful cherry print.",
           longDescription: "This lightweight chiffon blouse is designed with a fresh mint green base and a vibrant cherry print. It has a semi-sheer texture, button-down front, and a relaxed fit, making it perfect for layering or wearing on its own. The delicate collar and subtle pleating add a touch of elegance, making it suitable for both casual and dressy occasions.",
           material: "100% Chiffon",
