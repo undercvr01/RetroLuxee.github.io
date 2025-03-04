@@ -43,16 +43,25 @@ h1, h2, h3, h4{
 }
 
 h1{
-    font-size: 35px;
+    /* font-size: 35px; */
+    /* font-size: 2.1875em; */
+    font-size: 5dvh;
 }
 h2{
-    font-size: 30px;
+    /* font-size: 30px; */
+    /* font-size: 1.875em; */
+    font-size: 4.2dvh;
 }
 h3{
-    font-size: 25px;
+    /* font-size: 25px; */
+    /* font-size: 1.5635em; */
+    font-size: 3.7dvh;
+
 }
 h4{
-    font-size: 20px;
+    /* font-size: 20px; */
+    /* font-size: 1.25em; */
+    font-size: 3.2dvh;
 }
 h5{
     font-family: 'main2-content';
@@ -70,7 +79,9 @@ a, nav, button{
 p, li{
     font-family: 'main-content';
     color: #d8cfae;
-    font-size: 20px;
+    /* font-size: 20px; */
+    /* font-size: 1.25em; */
+    font-size: 2.5dvh;
 }
 
 body{
@@ -78,6 +89,7 @@ body{
     padding: 0;
     margin: 0;
     height: 200vh; /* test attribute or whatever*/
+    font-size: 100%;
 }
 
 .cl-companyname{
@@ -100,11 +112,11 @@ body{
 
     nav {
         
-        padding-left:  50px;
+        /* padding-left:  50px; */
         padding: 20px;
         background-color: #000000f5;
         text-align: right;
-        white-space: nowrap;
+        /* white-space: nowrap; */
         letter-spacing: 1.5px;
 
     }
@@ -136,17 +148,14 @@ body{
     button:hover{
         background-color: #abf8ff2d;
     }
-
-    #toggablemenu img{
-    width: 65px;
-    height: 65px;
-    }
 }
 
 .footer-cl{
     background-color: #2f1b0b;
     display: flex;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    overflow: hidden;
     flex-direction: row;
     text-align: center;
     p{
