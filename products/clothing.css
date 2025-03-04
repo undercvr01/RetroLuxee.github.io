@@ -731,3 +731,19 @@
           right: 10px;
      }
 }
+/* Footer */
+footer {
+     background-color: #ddbc8f;
+     color: white;
+     text-align: center;
+     padding: 15px 0;
+     margin-top: 50px;
+   }
+   
+   .developers {
+     text-align: center;
+   }
+   
+   .developers p {
+     margin: 10px 0;
+   }
