@@ -255,7 +255,7 @@ body{
 }
 
 @keyframes cl-3-anim-out {
-    form{
+    from{
         opacity: 1;
         transform: translateX(0px);
     } to {
