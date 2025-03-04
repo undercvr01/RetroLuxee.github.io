@@ -55,3 +55,133 @@ body {
      height: 60px;
      width: 100%;
 }
+
+#toggablemenu{
+
+     button{
+          display: flex;
+          position: fixed;
+          background-color: #48443a;
+          color: black;
+          padding: 20px;
+          margin-left: 2px;
+          border-radius: 5px;
+          width: 65px;
+          height: 65px;
+          border: none;
+          z-index: 1000;
+          cursor: pointer;
+     }
+ 
+     button:hover{
+          background-color: #abf8ff2d;
+     }
+
+     /*
+     <button id="toggablemenu">
+     <img src="pictures/cl-4_dropdwn.png" alt="dropdown"></button>
+     <div id="cl-cont-3">
+            <ul>
+                <li><a href="../products/clothing1.html">Products</a></li>
+                <li><a href="../newsletter/Newsletter.html">Newsletter</a></li>
+                <li><a href="../about-us/aboutus.html">About Us</a></li>
+                <li><a href="../customer-service/customerservice.html">Customer Service</a></li>
+            </ul>
+        </div>
+     */
+}
+
+#cl-cont-3{
+     display: none;
+     float: left;
+     background-color: rgba(59, 34, 31, 0.905);
+     z-index: 900;
+     overflow: visible;
+     position: fixed;
+     box-shadow: 0px 5px 15px #1a0d00;
+     transition: transform 2.5s ease-in;
+     /* transform: translateX(0px); */
+     margin: 0;
+     padding: 0;
+ 
+ }
+ 
+.show-1{
+     animation-name: cl-3-anim-out;
+     animation-duration: 1s;
+     /* transition: transform 2.5s ease-in-out opacity 2.5s ease-in-out; */
+     transition: transform 0.3s ease-in;
+     transform: translateX(-500px);
+ }
+ 
+ #cl-cont-3{
+     animation-name: cl-3-anim; 
+     animation-duration: 1.5s;
+     height: 300vh;
+     a{
+         text-decoration: none;
+     }
+     ul{
+         /* list-style-image: url('PICTURES/cl-11.png'); */
+         list-style: none;
+         padding-top: 50px;
+         padding-left: 0;
+     }
+     li{
+         
+         padding: 5px 50px 5px 25px;
+         font-size: 25px;
+         display: block;
+         margin-bottom: 5px;
+         position: relative;
+         /* padding-left: 30px; */
+         cursor: pointer;
+     }
+     li::before{
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 50%;
+         transform: translateY(-50%);
+         background: url('PICTURES/cl-11.png') no-repeat left center;
+         background-size: cover;
+         width: 30px;
+         height: 30px;
+         transition: transform 0.3s ease-in-out;
+         margin-left: 20px;
+         /* padding-left: 20px; */
+     }
+     li:hover::before{
+         transform: translateY(-50%) rotate(90deg);
+         /* background-color: #000000f5; */
+     }
+     li:hover{
+         /* background: ; */
+         /* transform: rotateZ(90deg); */
+         /* text-decoration: underline; */
+         background-color: rgba(141, 4, 4, 0.382);
+         cursor: pointer;
+     }
+ }
+
+ @keyframes cl-3-anim { 
+     from {
+         opacity: 0.4;
+         transform:translateX(-100px)
+     }
+     to {
+         opacity: 1;
+         transform: translateX(0px);
+     }
+ }
+ 
+ @keyframes cl-3-anim-out {
+     from{
+         opacity: 1;
+         transform: translateX(0px);
+     } to {
+         opacity: 0.4;
+         transform: translateX(-100px);
+     }
+     
+ }
