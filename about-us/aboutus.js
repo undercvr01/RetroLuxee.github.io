@@ -67,29 +67,7 @@ hide2.addEventListener("click", function(){
 });
 
 //skibidi ohio gyatt omsim
-hide3.addEventListener("mouseenter", function(){
-        hidden3.classList.remove("show-1");
 
-        toggle3 = true;
-        hidecontainerFunc3();
-        clearTimeout(set_sigma);
-        clearTimeout(set_sigma2);
-});
-hidden3.addEventListener("mouseenter", function(){
-        hidden3.classList.remove("show-1");
-        toggle3 = true;
-        hidecontainerFunc3();
-        clearTimeout(set_sigma);
-        clearTimeout(set_sigma2);
-});
-//hidden3 is cl-cont-3
-hidden3.addEventListener("mouseleave", function(){
-        toggle3 = false;
-        set_sigma = setTimeout(() =>{
-                hidden3.classList.add("show-1");
-        }, 300);  
-        set_sigma2 = setTimeout(hidecontainerFunc3, 2500);
-});
 hide3.addEventListener("click", function(){
         hidden3.classList.remove("show-1");
         if (toggle3==false){
