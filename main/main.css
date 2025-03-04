@@ -25,6 +25,12 @@ p {
      font-family: 'Cormorant Garamond Medium', serif;
 }
 
+@font-face {
+     font-family: 'Cormorant Garamond Regular';
+     src: url('/fonts/CormorantGaramond-Regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
 
 * {
      box-sizing: border-box;
@@ -33,7 +39,7 @@ p {
 }
 
 body {
-     font-family: Arial, sans-serif;
+     font-family: 'Cormorant Garamond Regular', serif;
      background-color: #f4f4f4;
      padding: 20px;
 }
