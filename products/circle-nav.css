@@ -1,0 +1,67 @@
+.circle-nav {
+     display: flex;
+     gap: 10px;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 20px;
+}
+
+.circle-btn {
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     font-size: 18px;
+     font-weight: bold;
+     color: white;
+     border-radius: 50%;
+     transition: transform 0.2s ease-in-out, opacity 0.2s;
+}
+
+.circle-btn:hover {
+     transform: scale(1.1);
+     opacity: 0.8;
+}
+
+.red {
+     background-color: #8B0000;
+}
+
+.green {
+     background-color: #006400;
+}
+
+.yellow {
+     background-color: #8B8000;
+}
+
+.black {
+     background-color: #222222;
+}
+
+.cyan {
+     background-color: #008B8B;
+}
+
+@media (max-width: 768px) {
+     .circle-btn {
+          width: 40px;
+          height: 40px;
+          font-size: 16px;
+     }
+}
+
+@media (max-width: 480px) {
+     .circle-nav {
+          gap: 5px;
+     }
+
+     .circle-btn {
+          width: 35px;
+          height: 35px;
+          font-size: 14px;
+     }
+}

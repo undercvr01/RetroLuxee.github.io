@@ -562,6 +562,10 @@
      transition: transform 0.3s ease-out, border-color 0.3s ease-out;
 }
 
+.c-outfit-product-image img:hover {
+     transform: scale(1.05);
+}
+
 /* Lightbox */
 .outfit-lightbox {
      display: none;
