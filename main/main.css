@@ -64,7 +64,7 @@ body {
        margin: auto;
    
        nav {
-           
+           margin-top: 2vh;
            /* padding-left:  50px; */
            padding: 20px;
            background-color: #f6e3b7;
@@ -100,6 +100,10 @@ body {
        
        button:hover{
            background-color: #abf8ff2d;
+       }
+       .toggablemenu img{
+            width: 20vw;
+            height: auto;
        }
    }
 
