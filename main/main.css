@@ -191,6 +191,8 @@ body {
        background-color: #f6e3b7; /* Warm peach color for header */
        padding: 20px 0;
        text-align: center; /* Center everything in the header */
+       justify-content: center !important;
+       align-items: center !important;
    }
 
    /* Logo styling */
@@ -204,8 +206,8 @@ body {
    }
 
    .newsletter-header{
-    justify-content: center;
-       align-items: center;
+    justify-content: center !important;
+       align-items: center !important;
     h1 {
        font-size: 2.5em;
        color: #333;
