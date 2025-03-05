@@ -3,8 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centered Brown Tabs</title>
-    <link rel="stylesheet" href="../main/main.css">
-    <script src="../main/main.js" defer></script>
     <style>
         body {
             background-image: url('web bg.png'); 
@@ -20,30 +18,24 @@
             display: flex;
             justify-content: center;
             background-color: #f6e3b7;
-            /* padding: 10px 0; */
+            padding: 10px 0;
             position: fixed;
             top: 0;
             width: 100%;
-            width: 100vw;
-            z-index: 800;
+            z-index: 1000;
             font-family: serif;
-            font-size: 1.4vh;
-            /* white-space: normal; */
-	margin-left: 0;
-    overflow: hidden;
+	margin-left:0 ;
         }
 
         .tab {
             display: flex; 
             align-items: center; 
-            /* gap: 8px;  */
+            gap: 8px; 
             color: black;
-            /* padding: 12px 18px; */
-            padding: 2% 2.4%;
+            padding: 12px 18px;
             text-decoration: none;
             text-align: center;
-            /* font-size: 1.2vh; */
-            /* margin: 0 5px; */
+            margin: 0 5px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
@@ -51,8 +43,6 @@
         .tab-logo {
             width: 50px;
             height: 50px; 
-            /* width:20vw;
-            height: auto; */
         }
 
         .tab:hover {
@@ -79,14 +69,11 @@
         }
 
         .fixed-image {
-            /* width: 1000px; */
-            width: 50vw;
-            height: auto;
+            width: 1000px;
+            height: 143px;
             object-fit: cover;
             margin-top: 5cm;
             margin-bottom: 2cm;
-            justify-content: left;
-            align-items: left;
         }
 
         .ugly {
@@ -94,21 +81,28 @@
             align-items: center; 
 	margin-bottom:5cm;
 	margin-top: auto;
-	/* margin-left: 20px; */
-	/* height:4cm;
-	width: 8cm; */
+	margin-left: 20px;
+	height:4cm;
+	width: 8cm;
         }
 
 	.ugly img {
     width: 100%;    
- /* max-width: 1000px;  */
-    max-width: 30vw;   
+ max-width: 1000px; 
     height: auto;
     display: block; 
     margin: auto; 
 }
 	
 
+        footer {
+            background-color: #dab98d; 
+            color: white; 
+            text-align: center;
+            padding: 20px;
+            font-family: serif;
+		margin-top:14cm;
+        }
 
 /*       ========================AUTOMATIC SLIDESHOW W/ MANUAL DRAGGING (VERTICAL) style start========================         */
 /* ================== STATIONARY VERTICAL SLIDESHOW ================== */
@@ -125,10 +119,9 @@
     aspect-ratio: 2;
 
     margin: 0 0 30% 0;
-	/* margin-left: 18cm; */
-    margin-left: 40vw;
-    margin-top:-8cm;
-    margin-bottom:7cm;
+	margin-left: 18cm;
+margin-top:-8cm;
+margin-bottom:7cm;
     padding: 0 0 30% 0;
     /* scrollbar-width: none; */
     /* -ms-overflow-style: none; */
@@ -141,7 +134,7 @@
 .slides {
     /* display: flex; */
     flex-direction: column;
-    padding:1cm;
+padding:1cm;
     align-items: center;
 }
 
@@ -150,8 +143,7 @@
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    /* height: 20vh; */
+    /* height: 60vh; */
     width: 100%;
 }
 
@@ -176,7 +168,7 @@
 }
 
 .stank{
-margin-left:3vw;
+margin-left:4cm;
 margin-top:7cm;
 margin-bottom:2cm;
 }
@@ -185,43 +177,24 @@ margin-bottom:2cm;
 display: flex;
 flex-direction: row;
 justify-content: center;
-margin-left:2.5vw;
+margin-left:2.5cm;
 margin-top: 1cm;
 }
 
 .image-flex {
         display: flex;
-        /* justify-content: center;  */
-   /* gap: 1px; */
-margin-right:1vw;  
-
-
+        justify-content: center; 
+   gap: 1px;
+margin-right:12cm;     
 }
 
-
     .image-flex img {
-        /* width: 100px;
-        height: 100px; */
-        width: 10vw;
-        height: auto;
+        width: 100px;
+        height: 100px;
         object-fit: cover;
        border-radius: 2px; 
 }
-footer {
-  background-color: #ddbc8f;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 50px;
-}
 
-.developers {
-  text-align: center;
-}
-
-.developers p {
-  margin: 10px 0;
-}
 
     </style>
 </head>
@@ -229,29 +202,17 @@ footer {
 
     <div class="tab-container">
         <img src="logo.png" alt= "test"class="tab-logo">
-        <a href="../products/clothing1.html" class="tab">PRODUCTS</a>
-        <a href="../newsletter/Newsletter.html" class="tab">NEWSLETTER</a>
-        <a href="../about-us/aboutus.html" class="tab">ABOUT US</a>
-        <a href="../customer-service/customerservice.html" class="tab">CUSTOMER SERVICE</a>
+        <a href="#" class="tab">PRODUCTS</a>
+        <a href="#" class="tab">NEWSLETTER</a>
+        <a href="#" class="tab">ABOUT US</a>
+        <a href="#" class="tab">CUSTOMER SERVICE</a>
     </div>
 
-    <div class ="dropdownmenu">  
-        <button id="toggablemenu">
-            <img src="../about-us/pictures/cl-4_dropdwn.png" alt="dropdown"></button>
-        <div id="cl-cont-3">
-            <ul>
-                <li><a href="../products/clothing1.html">Products</a></li>
-                <li><a href="../newsletter/Newsletter.html">Newsletter</a></li>
-                <li><a href="../about-us/aboutus.html">About Us</a></li>
-                <li><a href="../customer-service/customerservice.html">Customer Service</a></li>
-            </ul>
-        </div>
-    </div>
 <!--       ========================Poopy Logo========================         -->
 <div>
     
         <img src="RETRO LUXE.png" alt= "poop" class="fixed-image stank">
-	<h1 style="font-family: serif;margin-left:2vw;margin-top:-1cm;font-size:2.3vh;">TIMELESS STYLE,<br/> VINTAGE VIBES.</h1>
+	<h1 style="font-family: serif;margin-left:10cm;margin-top:-1cm">TIMELESS STYLE, VINTAGE VIBES.</h1>
 
 <div class="image-flex">
 <a href="INSERTpoo.html">
@@ -284,49 +245,26 @@ footer {
 <div class="slide">
     <img src="retromodel.png" alt="Slide 1" class="1poop" usemap="#model1">
     <map name="model1">
-        <area shape="rect" alt="" title="dress1" href="products/clothing1.html" coords="0,0,500,500">
+        <area shape="rect" alt="" title="dress1" href="dress1.html" coords="31,794,1237,2193">
     </map>
 </div>
 
 
 </div>
 
-<div class="slides">
-<div class="slide"><img src="retromodel2.png" alt="Slide 2" class="2poop" usemap="#model2">
-<map name="model2">
-        <area shape="rect" alt="" title="dress2" href="products/clothing2.html" coords="0,0,500,500">
-    </map>
-</div>
-        </div>
-        <div class="slides">
-<div class="slide"><img src="retromodel3.png" alt="Slide 3" class="1poop" usemap="#model3">
-<map name="model3">
-        <area shape="rect" alt="" title="dress3" href="products/clothing3.html" coords="0,0,500,500">
-</map>
-</div>
-	</div>
-    <div class="slides">
-<div class="slide"><img src="retromodel4.png" alt="Slide 3" class="2poop" usemap="#model4">
-<map name="model4">
-        <area shape="rect" alt="" title="dress4" href="products/clothing4.html" coords="0,0,500,500">
-</div>
+<div class="slide"><img src="retromodel2.png" alt="Slide 2" class="2poop" usemap="#model2"></div>
+        
+<div class="slide"><img src="retromodel3.png" alt="Slide 3" class="1poop" usemap="#model3"></div>
+	
+<div class="slide"><img src="retromodel4.png" alt="Slide 3" class="2poop" usemap="#model4"></div>
 
 </div>
 </div>
 </div>
-     <footer>
-          <p>&copy; 2025 Retro Luxe.</p>
-      <hr />
-      <div class:="developers">
-          <p>Developers:</p>
-          <strong>Bryant Timothy Lim</strong>
-          <strong><center>Catherine Grace A. Labrador</center></strong>
-          <strong><center>Erin Faye Fernandez</center></strong>
-          <strong><center>Johan Mar Loyola</center></strong>
-          <strong><center>Rosalie Joy I. Vicente</center></strong>
-      </div>
-        </footer>
 
+    <footer style="">
+        <p style="font-color: #794A3A;">&copy; 2025 RETRO LUXE. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

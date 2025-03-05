@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../main/main.css">
     <script src="../main/main.js" defer></script>
     <style>
-       
+        
 
         .newsletter-container {
             display: flex;
@@ -104,20 +104,43 @@
             border-radius: 8px;
         }
 
+        footer {
+          background-color: #ddbc8f;
+          color: white;
+          text-align: center;
+          padding: 15px 0;
+          margin-top: 50px;
+}
+
+.developers {
+  text-align: center;
+}
+
+.developers p {
+  margin: 10px 0;
+}
         
     </style>
 </head>
 <body>
-
-    <!-- Full-width header section -->
-    <div class="header-wrapper">
-        <nav class="newsletter-header">
-            <div class="logo-container">
-                <img src="../images/logo.png" alt="Retro Luxe Logo" class="logo">
-            </div>
-            <!-- <h1>Retro Luxe</h1>  Title remains Retro Luxe 
-            <p class="greeting">Hello [Customer's Name],</p> -->
-        </nav>
+    <div class ="dropdownmenu">  
+        <button id="toggablemenu">
+            <img src="../about-us/pictures/cl-4_dropdwn.png" alt="dropdown"></button>
+        <div id="cl-cont-3">
+            <ul>
+                <li><a href="../products/clothing1.html">Products</a></li>
+                <li><a href="../newsletter/Newsletter.html">Newsletter</a></li>
+                <li><a href="../about-us/aboutus.html">About Us</a></li>
+                <li><a href="../customer-service/customerservice.html">Customer Service</a></li>
+            </ul>
+        </div>
+        <div class="header-wrapper">
+            <nav class="newsletter-header">
+                <div class="logo-container">
+                    <img src="../Home/logo.png" alt="Retro Luxe Logo" class="logo" onclick="window.location.href='../Home/Home Test  MAIN.html'">
+                </div>
+            </nav>
+        </div>
     </div>
 
     <div class="newsletter-container">
@@ -171,6 +194,18 @@
 
      
     </div>
+    <footer>
+    <p>&copy; 2025 Retro Luxe.</p>
+<hr />
+<div class:="developers">
+    <p>Developers:</p>
+    <strong>Bryant Timothy Lim</strong>
+    <strong><center>Catherine Grace A. Labrador</center></strong>
+    <strong><center>Erin Faye Fernandez</center></strong>
+    <strong><center>Johan Mar Loyola</center></strong>
+    <strong><center>Rosalie Joy I. Vicente</center></strong>
+</div>
+  </footer>
 
 
 
