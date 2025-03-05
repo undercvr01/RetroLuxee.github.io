@@ -150,22 +150,21 @@ body{
     }
 }
 
-.footer-cl{
-    background-color: #ddbc8f;
-    display: flex;
-    /* flex-wrap: nowrap; */
-    flex-wrap: wrap;
-    overflow: hidden;
-    flex-direction: row;
-    text-align: center;
-    p{
-        text-align: center;
-        color:#c7c7c7f5;
-        font-size: 13px;
-        margin-bottom: 0;
-        line-height: 1;
-    }
-}
+footer {
+     background-color: #ddbc8f;
+     color: white;
+     text-align: center;
+     padding: 15px 0;
+     margin-top: 50px;
+   }
+   
+   .developers {
+     text-align: center;
+   }
+   
+   .developers p {
+     margin: 10px 0;
+   }
 /*************************************************************** HOVER SIDEBAR ********************************************************/
 #cl-cont-3{
     display: none;
