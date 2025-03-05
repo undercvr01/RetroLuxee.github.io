@@ -91,8 +91,8 @@ body {
            padding: 20px;
            margin-left: 2px;
            border-radius: 5px;
-           width: 65px;
-           height: 65px;
+           width: 10vw;
+           height: auto;
            border: none;
            z-index: 1000;
            cursor: pointer;
@@ -102,6 +102,11 @@ body {
            background-color: #abf8ff2d;
        }
    }
+
+.toggablemenu img{
+    height:auto;
+    weight: 10vw;
+}
 
 #cl-cont-3{
     display: none;
