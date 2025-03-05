@@ -1,0 +1,270 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Brown Tabs</title>
+    <style>
+        body {
+            background-image: url('web bg.png'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            min-height: 100vh; 
+            height: auto;
+            margin: 0;
+        }
+
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            background-color: #f6e3b7;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            font-family: serif;
+	margin-left:0 ;
+        }
+
+        .tab {
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            color: black;
+            padding: 12px 18px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab-logo {
+            width: 50px;
+            height: 50px; 
+        }
+
+        .tab:hover {
+            background-color: #F57F58;
+        }
+
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .animated-glow {
+            font-size: 40px;
+            color: white;
+            text-shadow: 0 0 5px #F57F58;
+            animation: glowing 1.5s infinite alternate;
+        }
+
+        @keyframes glowing {
+            0% { text-shadow: 0 0 10px #F57F58; }
+            50% { text-shadow: 0 0 30px #F57F58; }
+            100% { text-shadow: 0 0 20px #F57F58; }
+        }
+
+        .fixed-image {
+            width: 1000px;
+            height: 143px;
+            object-fit: cover;
+            margin-top: 5cm;
+            margin-bottom: 2cm;
+        }
+
+        .ugly {
+            justify-content: center; 
+            align-items: center; 
+	margin-bottom:5cm;
+	margin-top: auto;
+	margin-left: 20px;
+	height:4cm;
+	width: 8cm;
+        }
+
+	.ugly img {
+    width: 100%;    
+ max-width: 1000px; 
+    height: auto;
+    display: block; 
+    margin: auto; 
+}
+	
+
+        footer {
+            background-color: #dab98d; 
+            color: white; 
+            text-align: center;
+            padding: 20px;
+            font-family: serif;
+		margin-top:14cm;
+        }
+
+/*       ========================AUTOMATIC SLIDESHOW W/ MANUAL DRAGGING (VERTICAL) style start========================         */
+/* ================== STATIONARY VERTICAL SLIDESHOW ================== */
+.vertical-slideshow {
+    /* height: 90vh;
+    width: 50vw; */
+    height: 60vh;
+    width: 80vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    white-space: nowrap;
+    object-fit: cover;
+    scroll-snap-type: y mandatory;
+    aspect-ratio: 2;
+
+    margin: 0 0 30% 0;
+	margin-left: 18cm;
+margin-top:-8cm;
+margin-bottom:7cm;
+    padding: 0 0 30% 0;
+    /* scrollbar-width: none; */
+    /* -ms-overflow-style: none; */
+}
+
+.vertical-slideshow::-webkit-scrollbar {
+    display: none;
+}
+
+.slides {
+    /* display: flex; */
+    flex-direction: column;
+padding:1cm;
+    align-items: center;
+}
+
+.slide {
+    scroll-snap-align: start;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* height: 60vh; */
+    width: 100%;
+}
+
+.slide img {
+    width: 67%;
+    height: 67vh;
+    object-fit: contain;
+   
+}
+
+.poop1{
+    aspect-ratio: 2/1;
+}
+
+.poop2{
+    aspect-ratio: 1/2;
+}
+
+.poop1, .poop2{
+    scroll-snap-align: center;
+    display: inline-block;
+}
+
+.stank{
+margin-left:4cm;
+margin-top:7cm;
+margin-bottom:2cm;
+}
+
+.buttonUgly {
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-left:2.5cm;
+margin-top: 1cm;
+}
+
+.image-flex {
+        display: flex;
+        justify-content: center; 
+   gap: 1px;
+margin-right:12cm;     
+}
+
+    .image-flex img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+       border-radius: 2px; 
+}
+
+
+    </style>
+</head>
+<body style="background-image: url('web bg.png');" class="fixedbg">
+
+    <div class="tab-container">
+        <img src="logo.png" alt= "test"class="tab-logo">
+        <a href="#" class="tab">PRODUCTS</a>
+        <a href="#" class="tab">NEWSLETTER</a>
+        <a href="#" class="tab">ABOUT US</a>
+        <a href="#" class="tab">CUSTOMER SERVICE</a>
+    </div>
+
+<!--       ========================Poopy Logo========================         -->
+<div>
+    
+        <img src="RETRO LUXE.png" alt= "poop" class="fixed-image stank">
+	<h1 style="font-family: serif;margin-left:10cm;margin-top:-1cm">TIMELESS STYLE, VINTAGE VIBES.</h1>
+
+<div class="image-flex">
+<a href="INSERTpoo.html">
+    <img src="button.png" alt="Clickable" class="buttonUgly" width="100" height="100">
+</a>
+
+<a href="INSERTpoo.html">
+    <img src="button.png" alt="Clickable" class="buttonUgly" width="100" height="100">
+</a>
+
+<a href="INSERTpoo.html">
+    <img src="button.png" alt="Clickable" class="buttonUgly" width="100" height="100">
+</a>
+
+<a href="INSERTpoo.html">
+    <img src="button.png" alt="Clickable" class="buttonUgly" width="100" height="100">
+</a>
+</div>
+
+    
+</div>
+<!--       ========================Poopy Logo========================         -->
+
+
+<div class="ugly">
+        
+            <div class="vertical-slideshow">
+<div class="slides">
+
+<div class="slide">
+    <img src="retromodel.png" alt="Slide 1" class="1poop" usemap="#model1">
+    <map name="model1">
+        <area shape="rect" alt="" title="dress1" href="dress1.html" coords="31,794,1237,2193">
+    </map>
+</div>
+
+
+</div>
+
+<div class="slide"><img src="retromodel2.png" alt="Slide 2" class="2poop" usemap="#model2"></div>
+        
+<div class="slide"><img src="retromodel3.png" alt="Slide 3" class="1poop" usemap="#model3"></div>
+	
+<div class="slide"><img src="retromodel4.png" alt="Slide 3" class="2poop" usemap="#model4"></div>
+
+</div>
+</div>
+</div>
+
+    <footer style="">
+        <p style="font-color: #794A3A;">&copy; 2025 RETRO LUXE. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
